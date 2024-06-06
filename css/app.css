@@ -38,11 +38,11 @@ body {
 .main-container {
   display: grid;
   place-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .side-container {
-  margin-top: 50px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -50,52 +50,57 @@ body {
   gap: 10px;
 }
 
-/* Trending container css */
+/* Trending posts container css */
 
 .trending-posts-container {
   width: 800px;
   height: 350px;
   background-color: #161b28;
-  border: 1px solid #ffffff;
-  margin-top: 50px;
+  margin-top: 70px;
+}
+.trending-heading {
+  width: 210px;
+  background-color: #3a476a;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 28px;
+  padding: 5px 10px;
 }
 
 /* Main posts container css */
+
+.main-posts-heading {
+  width: 210px;
+  background-color: #3a476a;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 28px;
+  padding: 5px 10px;
+}
 
 .main-posts-container {
   width: 800px;
   min-height: 600px;
   background-color: #161b28;
-  border: 1px solid #ffffff;
-}
-
-.trending-heading {
-  color: #ffffff;
-  font-size: 28px;
-  padding: 10px;
-}
-
-.trending-heading i {
-  border-bottom: 1px solid #ffffff;
 }
 
 /* CSS za blog kartickite*/
-.container {
+.post-container {
   display: flex;
   justify-content: center;
 }
 
-.empty-div {
-  background-color: #748d92;
-}
-
 .blog-post {
-  width: 50%;
+  width: 100%;
   height: 250px;
   padding: 15px 15px;
-  background-color: #748d92;
+  background-color: #283149;
   display: grid;
-  grid-template-columns: 1fr 30% 70%;
+  grid-template-columns: 30% 70%;
   border-radius: 10px;
   margin: 10px;
 }
@@ -103,14 +108,15 @@ body {
 .blog-post_title {
   font-size: 20px;
   margin: 5px;
-  color: #2e3944;
+  color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 20px;
 }
 
 .blog-post_text {
   font-size: 15px;
-  color: #2e3944;
+  color: #ffffff;
   padding: 25px;
 }
 
@@ -131,7 +137,7 @@ body {
   padding: 10px;
   margin-left: 14px;
   margin-top: 10px;
-  color: #2e3944;
+  color: #ffffff;
 }
 
 .blog-post_button {
@@ -142,13 +148,33 @@ body {
   text-transform: inherit;
   font-weight: bold;
   font-size: 11px;
-  background-color: #2e3944;
-  color: #d3d9d4;
+  background-color: #3a476a;
+  color: #ffffff;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   cursor: pointer;
 }
 
 .blog-post_button:hover {
-  background-color: #748d92;
+  background-color: #00cfc8;
 }
+
+/* Tranzicija na posts */
+/* @keyframes appear {
+  from {
+    opacity: 0.3;
+    scale: 0.1;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.post-container {
+  animation: appear 3s linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 50%;
+} */
