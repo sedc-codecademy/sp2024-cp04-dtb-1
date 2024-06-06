@@ -1,11 +1,80 @@
 /* 
 Paleta na boi:
 
-Temna sivo nijansa - #212A31
-Posvetlo sivo nijansa - #2E3944
-Potemno sina nijansa - #124E66
-Siva nijansa - #748D92
-Svetlo siva nijansa - #D3D9D4
-
+Najtemna nijansa(za main container pozadina i container na karticki) - #161b28
+Potemna nijansa na sivo(za header i footer) - #283149
+Posvetlo siva nijansa(za pozadina na posts containers) - #3a476a
+Zeleno-sina nijansa(za hover na header i footer elementi) - #00CFC8
+Celosno bela nijansa(za tekstovi, borderi so 1px i slicno) - #ffffff
+Celosno svetlo siva nijansa - #03fff6
 
 */
+
+/* Body css, deafult css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Lato", sans-serif;
+}
+
+/* Main container css */
+
+#main {
+  background-color: #161b28;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: grid;
+  place-items: center;
+  gap: 50px;
+}
+
+.side-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 0px 10px;
+  gap: 10px;
+}
+
+/* Trending container css */
+
+.trending-posts-container {
+  width: 800px;
+  height: 350px;
+  background-color: #161b28;
+  border: 1px solid #ffffff;
+  margin-top: 50px;
+}
+
+/* Main posts container css */
+
+.main-posts-container {
+  width: 800px;
+  min-height: 600px;
+  background-color: #161b28;
+  border: 1px solid #ffffff;
+}
+
+.trending-heading {
+  color: #ffffff;
+  font-size: 28px;
+  padding: 10px;
+}
+
+.trending-heading i {
+  border-bottom: 1px solid #ffffff;
+}
