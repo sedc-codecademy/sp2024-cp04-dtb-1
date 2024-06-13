@@ -87,6 +87,34 @@ body {
   margin-bottom: 20px;
 }
 
+/* Load more button */
+
+.load-more-button-div {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.load-more-button {
+  width: 200px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #3a476a;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: inherit;
+  font-weight: bold;
+}
+
+.load-more-button:hover {
+  background-color: #00cfc8;
+  color: #ffffff;
+}
+
 /* Css za main posts headrot */
 
 .heading-posts-div {
@@ -143,7 +171,7 @@ body {
 
 .blog-post_img img {
   width: 100%;
-  height: 100%;
+  height: 95%;
   border-radius: 10px;
   padding: 0;
 }
@@ -159,6 +187,11 @@ body {
   margin-left: 14px;
   margin-top: 10px;
   color: #ffffff;
+}
+
+.post-rating {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .blog-post_button {
@@ -178,4 +211,14 @@ body {
 
 .blog-post_button:hover {
   background-color: #00cfc8;
+}
+
+/* Show more func */
+
+.main-posts-container div:nth-child(5) ~ div {
+  display: none;
+}
+
+.loaded {
+  display: none;
 }
