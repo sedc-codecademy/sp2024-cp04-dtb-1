@@ -5,6 +5,8 @@ const dataURL = "/data/posts.json";
 const postsContainer = document.querySelector(".main-posts-container");
 const showMoreButton = document.querySelector(".load-more-button");
 
+// Fetch function for posts data in homepage
+
 const fetchPosts = async () => {
   try {
     const response = await fetch("/javascript/data/posts.json");
@@ -58,7 +60,7 @@ const renderPosts = (posts) => {
   });
 };
 
-// Button show more funcs
+// Button show more functionality
 
 let numberOfPosts = 5;
 
@@ -82,5 +84,19 @@ showMoreButton.addEventListener("click", (e) => {
     event.target.classList.add("loaded");
   }
 });
+
+// Proggres bar functionality
+
+const filled = document.querySelector(".filled");
+
+const updateProgresBarFilled = () => {
+  filled.style.width = `${
+    (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100
+  }%`;
+  requestAnimationFrame(updateProgresBarFilled);
+};
+
+// Calling proggres bar function for working
+updateProgresBarFilled();
 
 fetchPosts();

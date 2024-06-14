@@ -30,9 +30,6 @@ body {
 
 #main {
   background-color: #161b28;
-  display: grid;
-  grid-template-columns: 80% 20%;
-  min-height: 100vh;
 }
 
 .main-container {
@@ -41,6 +38,24 @@ body {
   gap: 30px;
 }
 
+.main-containers {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  min-height: 100vh;
+}
+
+/* Proggres bar on top of body*/
+.proggres-bar {
+  position: fixed;
+  width: 100%;
+  height: 1px;
+}
+
+.filled {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ffffff, #03fff6);
+}
 /* Side (reklami) css container */
 
 .side-container {
