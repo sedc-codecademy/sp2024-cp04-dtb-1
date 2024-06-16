@@ -29,8 +29,10 @@ const fetchPosts = async () => {
 const renderPosts = (posts) => {
   let postHTML = "";
 
-  posts.map((post) => {
-    postHTML += `<div class="post-container">
+  posts
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .map((post) => {
+      postHTML += `<div class="post-container">
             <div class="blog-post">
               <div class="blog-post_img">
                 <img
@@ -60,8 +62,8 @@ const renderPosts = (posts) => {
             </div>
           </div>`;
 
-    postsContainer.innerHTML = postHTML;
-  });
+      postsContainer.innerHTML = postHTML;
+    });
 };
 
 // Render trending posts functionality
@@ -147,3 +149,7 @@ const updateProgresBarFilled = () => {
 updateProgresBarFilled();
 
 fetchPosts();
+
+const newDate = new Date();
+
+console.log(newDate);
