@@ -16,7 +16,88 @@
   </head>
 
   <body>
-    <header id="header"></header>
+    <header class="header">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="#" class="nav-logo"
+          ><img class="nav-logo" src="/assets/logos/navbar-logo.png" alt="Logo"
+        /></a>
+
+        <!-- Search bar -->
+        <div class="search-form">
+          <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search" />
+          </div>
+        </div>
+
+        <!-- Desktop Nav menu -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Post</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="NewsletterPopUp">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sample</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link open-button" onclick="openForm()"
+              >Log in</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger nav menu -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <!-- Login popup -->
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+          <!-- <label for="email"><b>Email</b></label> -->
+          <input type="text" placeholder="Enter E-mail" name="email" required />
+          <!-- <label for="psw"><b>Password</b></label> -->
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+          <button type="submit" class="btn">Login</button>
+          <p class="new-reader">
+            New reader?
+            <a href="#" class="create-account-link">Create an account.</a>
+          </p>
+        </form>
+      </div>
+
+      <!-- Newsletter Popup -->
+      <div class="newsletterPopup" style="display: none">
+        <div class="newsletterPopup-content">
+          <span class="close-button">×</span>
+          <h1>Join our e-mail list!</h1>
+          <br />
+          <p>Sign up for our weekly updates</p>
+          <form>
+            <input type="email" placeholder="Your email address" required="" />
+            <p>Coming soon...</p>
+          </form>
+        </div>
+      </div>
+    </header>
     <main id="main">
       <div class="proggres-bar">
         <div class="filled"></div>
