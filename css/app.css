@@ -69,9 +69,12 @@ body {
 
 .trending-posts-container {
   width: 800px;
-  height: 350px;
+  height: max-content;
   background-color: #161b28;
   margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 /* Css za trending posts headrot */

@@ -3,100 +3,110 @@
     "id": 1,
     "title": "Apple is putting ChatGPT in Siri for free later this year",
     "author": "John Richardson",
-    "date": "06-07-2024",
+    "date": "2024-07-06",
     "image": "../../assets/postImages/chat-gpt-post-img.png",
     "description": "Apple is partnering with OpenAI to put ChatGPT into Siri, the company announced at its WWDC 2024 keynote on Monday. ChatGPT will be available for free in iOS 18 and macOS Sequoia later this year without an account, and Apple says that user queries won't be logged. The popular chatbot will also be integrated into Apple systemwide writing tools.",
     "text": "Apple is partnering with OpenAI to put ChatGPT into Siri, the company announced at its WWDC 2024 keynote on Monday. ChatGPT will be available for free in iOS 18 and macOS Sequoia later this year without an account, and Apple says that user queries wont be logged. The popular chatbot will also be integrated into Apple systemwide writing tools. In addition, paid ChatGPT subscribers will be able to link their accounts to access premium features from OpenAI within Apple operating systems. As OpenAI and Apple explain, “Apple users are asked before any questions are sent to ChatGPT, along with any documents or photos, and Siri then presents the answer directly. The long-awaited partnership emerges as Apple strives to integrate AI features that rival those of other big tech companies. Apple had been in discussions with both Google and OpenAI to incorporate their AI technology into its operating systems. Ultimately, it was OpenAI that secured the deal.",
-    "rating": 4
+    "rating": 4,
+    "tag": "chatgpt"
   },
   {
     "id": 2,
     "title": "Xbox chief confirms more games are coming to other platforms",
     "author": "Phil Somer",
-    "date": "20-06-2024",
+    "date": "2024-20-06",
     "image": "../../assets/postImages/xbox-games.jpg",
     "description": "Xbox chief Phil Spencer has confirmed that more of Microsoft's own games will be coming to other platforms, like the PS5 and Nintendo Switch. Microsoft revealed earlier this year that four Xbox-exclusive games were launching on PS5 and some on Nintendo Switch, with fans left wondering if it would only be four titles or if there are more to come. Spencer took the opportunity to clear up that mystery in an interview with IGN yesterday.",
     "text": "Xbox chief Phil Spencer has confirmed that more of Microsoft's own games will be coming to other platforms, like the PS5 and Nintendo Switch. Microsoft revealed earlier this year that four Xbox-exclusive games were launching on PS5 and some on Nintendo Switch, with fans left wondering if it would only be four titles or if there are more to come. Spencer took the opportunity to clear up that mystery in an interview with IGN yesterday. The confirmation of more games coming to rival platforms comes months after Spencer denied there was a change to Microsoft's strategy of Xbox exclusives. “We made a decision that we're going to take four games to the other consoles, just four games. Not a change to our fundamental exclusive strategy,” said Spencer in an Xbox podcast earlier this year. Microsoft unveiled a collection of new Xbox games during its big showcase event last night, with Doom: The Dark Ages and Gears of War: E-Day the big new “world premiere” titles. One word Microsoft didn't use all night was exclusive, though. It's something I've noticed the company has been avoiding for months now. Microsoft-owned Arkane Lyon unveiled its Blade game late last year at the Game Awards, and there was no mention of exclusivity for Xbox. We also got a first look at Bethesda's new Indiana Jones and the Great Circle game earlier this year, and while Xbox and PC were confirmed as launch platforms, there was no mention of exclusivity. I understand Microsoft has been weighing up launching Indiana Jones on PS5 several months after the planned launch for Xbox later this year. All of these decisions are part of “Project Latitude” inside Microsoft, a secretive project that I recently detailed in my weekly Notepad newsletter. Microsoft is considering a number of games for rival platforms, including the recently-released Senua's Saga: Hellblade II game. You can read more about Project Latitude here. IGN didn't press Spencer further on the Xbox multiplatform plans, and Microsoft largely avoided the elephant in the room during its showcase by never mentioning rival platforms. Instead, it focused on a barrage of game trailers that resulted in one of the best Xbox showcases I've seen in years.",
-    "rating": 3
+    "rating": 3,
+    "tag": "xbox"
   },
   {
     "id": 3,
     "title": "Frontier hackers threaten to release private data for at least 750,000 customers",
     "author": "Beatrice Sala",
-    "date": "23-07-2024",
+    "date": "2024-07-23",
     "image": "../../assets/postImages/hackers.jpg",
     "description": "Frontier Communications has revealed that information for over 750,000 customers — including full names and Social Security numbers — was exposed in a data breach following a cyberattack on April 14th. Hackers claim to have even more and will release it unless Frontier pays a ransom.",
     "text": "Frontier Communications has revealed that information for over 750,000 customers — including full names and Social Security numbers — was exposed in a data breach following a cyberattack on April 14th. Hackers claim to have even more and will release it unless Frontier pays a ransom. The attack enabled hackers to access 751,895 customers' personal data on Frontier's systems according to a sample of the notice Frontier submitted to the Office of the Maine Attorney General. Frontier has notified impacted customers and provided them with one year of free credit monitoring and identity theft services, but says it “does not believe” customer financial information was exposed in the breach. Bleeping Computer reports that the RansomHub extortion group claimed responsibility for the attack on June 4th and is threatening to leak the 5GB of customer data it allegedly stole unless Frontier responds to their demands by June 14th. The group claims the stolen dataset contains information belonging to two million Frontier customers, including their full name, physical address, date of birth, social security number, email address, credit score, and phone number. Frontier says it's bolstered its network security following the attack and notified both regulatory authorities and law enforcement. A securities filing reveals that the company was forced to shut down some of its systems to contain the incident.",
-    "rating": 4
+    "rating": 4,
+    "tag": "hackers"
   },
   {
     "id": 4,
     "title": "Adobe overhauls terms of service to say it won't train AI on customers' work",
     "author": "Alex Castro",
-    "date": "01-07-2024",
+    "date": "2024-07-01",
     "image": "../../assets/postImages/adobe.jpg",
     "description": "Adobe is overhauling the terms customers must agree to when using its apps in an effort to win back trust — and clarify that it won't train AI on their work. The change, announced via a new blog post, comes after a week of backlash from users who feared that an update to Adobe's terms of service would allow their work to be used for AI training.",
     "text": "Adobe is overhauling the terms customers must agree to when using its apps in an effort to win back trust — and clarify that it won't train AI on their work. The change, announced via a new blog post, comes after a week of backlash from users who feared that an update to Adobe's terms of service would allow their work to be used for AI training. The new terms of service are expected to roll out on June 18th and aim to better clarify what Adobe is permitted to do with its customers' work, according to Adobe's president of digital media, David Wadhwani. Adobe faced widespread scrutiny from creatives over the last week after its customers were alerted to language in its terms of service update that discussed AI. Customers interpreted Adobe's vague language to mean the company was allowing itself to freely access and use customers' work to train Adobe's generative AI models. That wasn't the case — and Adobe's policies around training weren't changing — but Adobe's chief product officer, Scott Belsky, acknowledged that the wording was “unclear” and that “trust and transparency couldn't be more crucial these days.' A chunk of the creative community has long-standing beef with Adobe over its alleged industry monopoly, its subscription-based pricing models, and its use of generative AI. The company trained its own Firefly AI model on Adobe Stock images, openly licensed content, and public domain content to avoid some of the ethical concerns surrounding generative AI, but several artists have found images that reference their work on Adobe's stock platform — making it hard to trust the protections in place.",
-    "rating": 5
+    "rating": 5,
+    "tag": "ai"
   },
   {
     "id": 5,
     "title": "Canon made a special lens for the Apple Vision Pro's spatial videos",
     "author": "Antonio G. Di Benedetto",
-    "date": "03-07-2024",
+    "date": "2024-07-03",
     "image": "../../assets/postImages/canon.jpeg",
     "description": "Apple announced at WWDC 2024 that Canon is making a funky-looking new lens for its EOS R7 camera, tailor-made for creating spatial video for the Vision Pro headset. This comes alongside the new visionOS 2 update, which gives the Photos app the ability to convert 2D images into spatial ones.",
     "text": "Apple announced at WWDC 2024 that Canon is making a funky-looking new lens for its EOS R7 camera, tailor-made for creating spatial video for the Vision Pro headset. This comes alongside the new visionOS 2 update, which gives the Photos app the ability to convert 2D images into spatial ones. This isn't Canon's first time making a single-purpose dual-lens array like this for its EOS line. It currently has a VR system with an RF 5.2mm f/2.8 L Dual Fisheye lens that's compatible with the EOS R5 C, R5, and R6 Mark II. The new spatial lens is an RF-S 7.8mm f/4 STM lens, meaning it's a lens exclusively for crop sensor bodies like the R7. Details are still very light at this time, with neither Canon nor Apple announcing specs, pricing, or availability.",
-    "rating": 4
+    "rating": 4,
+    "tag": "apple"
   },
   {
     "id": 6,
     "title": "Where to preorder Star Wars Outlaws (and what's included in each edition)",
     "author": "Antonio G. Di Benedetto",
-    "date": "03-07-2024",
+    "date": "2024-06-15",
     "image": "../../assets/postImages/star-wars.jpg",
     "description": "Ubisoft announced in April that Star Wars Outlaws will launch on the PlayStation 5, Xbox Series X/S, and PC on August 30th. If you've been on the fence about buying it in advance, then there's some new material to help you make the decision. We recently got a closer look at its open-world gameplay at Ubisoft Forward 2024, including the title's combat, space travel, and branching story dialogue.",
     "text": "Ubisoft announced in April that Star Wars Outlaws will launch on the PlayStation 5, Xbox Series X/S, and PC on August 30th. If you've been on the fence about buying it in advance, then there's some new material to help you make the decision. We recently got a closer look at its open-world gameplay at Ubisoft Forward 2024, including the title's combat, space travel, and branching story dialogue. And, thankfully, there's still plenty of time to secure various exclusive preorder incentives.Ubisoft announced in April that Star Wars Outlaws will launch on the PlayStation 5, Xbox Series X/S, and PC on August 30th. If you've been on the fence about buying it in advance, then there's some new material to help you make the decision. We recently got a closer look at its open-world gameplay at Ubisoft Forward 2024, including the title's combat, space travel, and branching story dialogue. And, thankfully, there's still plenty of time to secure various exclusive preorder incentives. Developed by Massive Entertainment, Outlaws follows main character Kay Vess and her trusty alien companion Nix as they navigate a galactic criminal underworld. It takes place throughout a range of familiar locales, including Tatooine and Canto Bight, along with Kijimi, Akiva, and an all-new planet named Toshara. The original trailer suggests Vess is looking to score a large heist from the opulent Zerek Besh family to buy her freedom. It's rare to see a Star Wars game with a female protagonist as the lead, and it's equally rare to see one take place in an open world — Outlaws is the first, in fact. If the work Ubisoft and Massive did on Avatar: Frontiers of Pandora is any indication, we should be in for a treat. Keep reading for a quick summary of all the preorder details, including the skins, post-launch DLC, and other goodies that come with each edition.",
-    "rating": 5
+    "rating": 5,
+    "tag": "gaming"
   },
   {
     "id": 7,
     "title": "Best printer 2024, best printer for home use, office use, printing labels and printer for school",
     "author": "Nilay Patel",
-    "date": "25-06-2024",
+    "date": "2024-06-25",
     "image": "../../assets/postImages/printer.jpg",
     "description": "It's been over a year since I last told you to just buy a Brother laser printer, and that article has fallen down the list of Google search results because I haven't spent my time loading it up with fake updates every so often to gain the attention of the Google search robot.",
     "text": "It's been over a year since I last told you to just buy a Brother laser printer, and that article has fallen down the list of Google search results because I haven't spent my time loading it up with fake updates every so often to gain the attention of the Google search robot. It's weird because the correct answer to the query “what is the best printer” has not changed, but an entire ecosystem of content farms seems motivated to constantly update articles about printers in response to the incentive structure created by that robot's obvious preferences. Pointing out that incentive structure and the culture that's developed around it seems to make a lot of people mad, which is also interesting! Anyway, here's the best printer for 2024: a Brother laser printer. You can just pick any one you like; I have one with a sheet feeder and one without a sheet feeder. Both of them have reliably printed return labels and random forms and pictures for my kid to color for years now, and I have never purchased replacement toner for either one. Neither has fallen off the WiFi or insisted I sign up for an ink-related hostage situation or required me to consider the ongoing schemes of HP executives who seem determined to make people hate a legendary brand with straightforward cash grabs and weird DRM ideas. I am including a box with buttons to buy a Brother laser printer; the buttons kick us back small affiliate fees if you press them and buy a printer. Don't feel compelled to do it; my only ask is that you make this article go viral by sharing it in faux-outrage that the EIC of The Verge has published an article partially generated by AI, because after the buttons I am going to include a bunch of AI-generated copy from Google's Gemini in order to pad this thing out.",
-    "rating": 5
+    "rating": 5,
+    "tag": "printer"
   },
   {
     "id": 8,
     "title": "The future of the smart kitchen: robots, apps, and AI, oh my!",
     "author": "Quentyn Kennemer",
-    "date": "03-07-2024",
+    "date": "2024-06-28",
     "image": "../../assets/postImages/smart-robot-image.jpg",
     "description": "To be successful, smart kitchen innovations need to address real problems in the kitchen, not just jump on the bandwagon of whatever is the sizzling hot thing in tech.",
     "text": "To be successful, smart kitchen innovations need to address real problems in the kitchen, not just jump on the bandwagon of whatever is the sizzling hot thing in tech. For example, take the Joule sous vide. One of the earliest smart kitchen gadgets, this beautiful piece of tech was almost impossible to use because it relied entirely on an app and Wi-Fi connectivity. Two things still largely alien to the kitchen of 2015. Chris Young, former CEO of ChefSteps which developed Joule, told the SKS audience how the decision to not put a screen on the device lost them half their potential customer base. (Joule was rescued by Breville in 2019, which still hasn't put a screen on it.) Young's latest gadget is the Combustion Predictive Thermometer Plus Display, an incredibly smart meat thermometer that not only has the option of a very big screen but doesn't need Wi-Fi at all. This type of pivot is emblematic of what I saw throughout the conference this week: a refocusing by the entrepreneurs and companies in the smart kitchen away from sleek, showy gadgets toward developing products built on an understanding of how people actually cook. Many of the solutions I saw and heard about seem designed to make cooking easier, healthier, and more personalized — the latter being something generative AI will clearly play a big role in. Of course, there's still plenty of gadgets — from robot chefs to wirelessly-powered appliances. But there's also a shift toward improving the software that powers the smart kitchen. Rather than rely on individual apps built by appliance manufacturers, platforms like Fresco are working toward a universal kitchen OS — a cross-kitchen experience that can connect our appliances with each other and with the recipes we want to cook. My ideal smart kitchen is one that knows what I have in my pantry and fridge, can develop me a meal plan based on those ingredients, shop for whatever extra items I need, then have my appliances prepped and ready to go when I start cooking. While that dream is still a ways off, from what I saw this week, the future of the smart kitchen is coming into focus. I'll be sharing snippets and stories around the things that caught my attention at the Smart Kitchen Summit over the next few days, so check back often.",
-    "rating": 3
+    "rating": 3,
+    "tag": "smartkitchen"
   },
   {
     "id": 9,
     "title": "Apple's AirPods are being upgraded with powerful accessibility features",
     "author": "Chris Welch",
-    "date": "30-07-2024",
+    "date": "2024-07-30",
     "image": "../../assets/postImages/air-pods.jpg",
     "description": "As it has done in years past, Apple outlined upcoming new software features coming to the company's current lineup of AirPods earbuds and headphones today.",
     "text": "As it has done in years past, Apple outlined upcoming new software features coming to the company's current lineup of AirPods earbuds and headphones today. Apple is introducing Siri Interactions, which includes new gesture controls for AirPods to control Siri in new ways. You can shake your head yes or no to respond without needing to use your voice, which is particularly useful in loud environments. AirPods Pro are getting new Voice Isolation technology that utilizes the H2 chip and machine learning to isolate and enhance voice quality while removing background noise like wind so the listener can hear you clearly.",
-    "rating": 4
+    "rating": 4,
+    "tag": "apple-airpods"
   },
   {
     "id": 10,
     "title": "It's clearly time: all the news about the transparent tech renaissance",
     "author": "Umar Shakir",
-    "date": "13-07-2024",
+    "date": "2024-05-13",
     "image": "../../assets/postImages/tansparent.jpg",
     "description": "Gadgets, much like fashion, can make style comebacks. For tech: we've lived through the '80s beige keyboards, transitioned to the '90s with gray and black plastic video game systems plus bright colors for Sony's Walkman and Nintendo's Game Boy handhelds, and then, at the turn of the millennium, welcomed the amazing see-through iMacs, N64 controllers, and other gadgets with clear casings.",
     "text": "Gadgets, much like fashion, can make style comebacks. For tech: we've lived through the '80s beige keyboards, transitioned to the '90s with gray and black plastic video game systems plus bright colors for Sony's Walkman and Nintendo's Game Boy handhelds, and then, at the turn of the millennium, welcomed the amazing see-through iMacs, N64 controllers, and other gadgets with clear casings. And just like the return of grunge makeup and baggy jeans, transparent tech is back. See-through devices are leapfrogging over the '00s piano white iPods, '10s matte black smartphones, and some of today's colored aluminum and glass finishes to (hopefully) become the next big trend. Now, we've got clear smartphones like the Nothing Phone, see-through earbuds like the Beats Studio buds, colorful translucent shell casings for game consoles, and even chargers and USB-C cables that show off some capacitors for your pleasure. So dust off your Apple Studio Display CRT monitor, Toys R Us-exclusive Extreme Green colored N64 controller, and your other favorite transparent gadgets as you scroll through all of our clear tech news.",
-    "rating": 5
+    "rating": 5,
+    "tag": "transparenttech"
   }
 ]
