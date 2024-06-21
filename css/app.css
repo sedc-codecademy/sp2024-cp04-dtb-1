@@ -24,6 +24,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", "Lato", sans-serif;
+  background-color: #161b28;
 }
 
 html {
@@ -342,7 +343,7 @@ a {
 }
 
 /* Proggres bar on top of body*/
-.proggres-bar {
+/* .proggres-bar {
   position: fixed;
   width: 100%;
   height: 1px;
@@ -352,12 +353,13 @@ a {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, #ffffff, #03fff6);
-}
+} */
 /* Side (reklami) css container */
 
 .side-container {
   margin-top: 80px;
-  position: fixed;
+  position: sticky;
+  z-index: 2;
   right: 0%;
   padding: 0px 10px;
 }
@@ -536,4 +538,97 @@ a {
 
 .loaded {
   display: none;
+}
+
+/* FOOTER*/
+
+#footer {
+  background-color: #283149;
+  border-color: #161b28;
+  border-top-left-radius: 48%;
+  border-top-style: groove;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+li {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+.logo {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+/* .divflex {
+  border-color: #161b28;
+  border-top-left-radius: 48%;
+  border-top-style: groove;
+} */
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 80px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 16px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.social-links img {
+  width: 20px;
+  height: 20px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #00cfc8;
+}
+
+.infothree {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  gap: 20px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+.footer-botom {
+  background-color: #00cfc8;
+  min-height: 30px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #283149;
+  text-align: center;
+  font-size: 14px;
+  opacity: 1;
+}
+.footer-botom a {
+  color: #161b28;
+}
+
+.social-links h2 {
+  text-align: left;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 600;
 }
