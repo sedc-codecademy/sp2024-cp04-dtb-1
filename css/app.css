@@ -577,6 +577,22 @@ li {
   padding: 16px;
 }
 
+.infoone {
+  padding-top: 30px;
+}
+
+.infoone h2 {
+  padding-bottom: 20px;
+}
+
+.infotwoo {
+  padding-top: 30px;
+}
+
+.infotwoo h2 {
+  padding-bottom: 20px;
+}
+
 .social-links {
   display: flex;
   flex-direction: row;
@@ -621,6 +637,14 @@ a:hover {
 }
 .footer-botom a {
   color: #161b28;
+}
+
+.address {
+  padding-left: 10px;
+}
+
+.social-links {
+  padding-left: 10px;
 }
 
 .social-links h2 {
