@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Tech Blog</title>
+    <link rel="stylesheet" href="/css/register-page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/javascript/register-page.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="Formfill" onsubmit="return validation()">
+                <h2>Register</h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="fName" placeholder="First Name" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="lName" placeholder="Last Name" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" name="cPassword" placeholder="Confirm Password" required>
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" onclick="validation()" value="Register">
+                </div>
+                <div class="group">
+                    <span>Already have an account? <a href="homePage.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="registered" id="registered">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>Congratulations</h2>
+            <p>You were registered successfuly!</p>
+            <a href="#"><button>OK</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
