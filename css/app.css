@@ -19,7 +19,7 @@ Celosno svetlo siva nijansa - #03fff6
   font-family: "Roboto", "Lato", sans-serif;
 }
 
-body {
+.main-container {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -49,6 +49,7 @@ a {
 }
 
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,11 +77,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
   padding-right: 2rem;
 }
 
 .nav-item {
   margin-left: 5rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -91,12 +95,6 @@ a {
 
 .nav-link:hover {
   color: #00cfc8;
-}
-
-.nav-logo {
-  font-size: 2.1rem;
-  font-weight: 500;
-  color: #482ff7;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -235,7 +233,7 @@ a {
 }
 
 /* Login button */
-.form-container .btn {
+.form-container .login-form-button {
   background-color: #00cfc8;
   color: white;
   padding: 16px 20px;
@@ -248,7 +246,7 @@ a {
 }
 
 /* Hover effects on buttons */
-.form-container .btn:hover,
+.form-container .login-form-button:hover,
 .open-button:hover {
   opacity: 1;
 }
@@ -326,7 +324,11 @@ a {
 
 /* Main container css */
 
-#main {
+.body-container {
+  background-color: #161b28;
+}
+
+main {
   background-color: #161b28;
 }
 
@@ -342,24 +344,12 @@ a {
   min-height: 100vh;
 }
 
-/* Proggres bar on top of body*/
-/* .proggres-bar {
-  position: fixed;
-  width: 100%;
-  height: 1px;
-}
-
-.filled {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to right, #ffffff, #03fff6);
-} */
 /* Side (reklami) css container */
 
 .side-container {
   margin-top: 80px;
   position: sticky;
-  z-index: 2;
+  z-index: 22;
   right: 0%;
   padding: 0px 10px;
 }
@@ -488,7 +478,7 @@ a {
 
 .blog-post_img img {
   width: 100%;
-  height: 95%;
+  height: 100%;
   border-radius: 10px;
   padding: 0;
 }
@@ -500,9 +490,10 @@ a {
 }
 
 .blog-post_date {
-  padding: 10px;
+  font-size: 14px;
+  padding: 5px 5px 0px 5px;
   margin-left: 14px;
-  margin-top: 10px;
+
   color: #ffffff;
 }
 
@@ -574,7 +565,7 @@ li {
   gap: 80px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 16px;
+  padding: 20px 10px 0 10px;
 }
 
 .infoone {
@@ -655,4 +646,178 @@ a:hover {
   opacity: 0.7;
   font-size: 16px;
   font-weight: 600;
+}
+
+/* Register page css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 610px;
+  border: 2px solid rgba(255, 255, 2550, 5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+}
+
+.form-box .input-box {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.form-box .input-box input {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 20px 0 5px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.bx-bxs-user {
+  position: absolute;
+  color: #ffffff;
+  top: 13px;
+  right: 0;
+}
+
+.bx-bxs-envelope {
+  position: absolute;
+  color: #ffffff;
+  top: 13px;
+  right: 0;
+}
+
+.bx-bxs-lock-alt {
+  position: absolute;
+  color: #ffffff;
+  top: 13px;
+  right: 0;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.register-button-submit {
+  color: #ffffff;
+  background: #161b28;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.group span {
+  margin-right: 5px;
+  color: white;
+}
+
+.group span a {
+  color: #00cfc8;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500px;
+}
+
+.group a:focus {
+  text-decoration: underline;
+}
+
+#result {
+  color: red;
+  font-weight: 600;
+  position: relative;
+  top: 25px;
+}
+
+.registered {
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s, top 0.4s;
+  visibility: hidden;
+  text-align: center;
+  padding: 0 30px 30px;
+  height: 330px;
+  color: #000;
+}
+
+.registered ion-icon {
+  color: green;
+  font-size: 50px;
+}
+
+.registered button {
+  width: 100%;
+  background: #00ff00;
+  padding: 10px 0;
+  margin-top: 50px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.registered a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.open-slide {
+  top: 50%;
+  transform: translate(-50% -50%) scale(1);
+  visibility: visible;
+}
+
+@media (max-width: 600px) {
+  .input-box input[type="text"],
+  .input-box input[type="email"],
+  .input-box input[type="password"] {
+    width: 100%;
+  }
 }
