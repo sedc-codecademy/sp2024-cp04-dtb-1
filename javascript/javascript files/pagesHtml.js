@@ -34,7 +34,7 @@ export let homePageHTML = `
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#footer" class="nav-link">Contact</a>
           </li>
         </ul>
 
