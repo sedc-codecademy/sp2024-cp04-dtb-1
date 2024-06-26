@@ -96,37 +96,7 @@ export let homePageHTML = `
                     alt=""
                     width="20px" /></span
                 ><i>Trending posts</i>
-              </h2>
-              <!-- <div class="post-container">
-                <div class="blog-post">
-                  <div class="blog-post_img">
-                    <img
-                      src="assets/image for posts/post-test.jpg"
-                      alt=""
-                      width="100px"
-                    />
-                  </div>
-                  <div class="blog-post_info">
-                    <h1 class="blog-post_title">POST ONE</h1>
-                    <p class="blog-post_text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Fuga aliquid nihil quod nisi mollitia assumenda quae
-                      reiciendis molestiae eligendi, fugit ducimus, odit
-                      expedita quo ratione necessitatibus. Eum unde autem
-                      aperiam!
-                    </p>
-                    <div class="blog-post_button_and_date">
-                      <div>
-                        <button class="blog-post_button">Read More</button>
-                      </div>
-                      <div class="blog-post_date">
-                        <small>Author</small>
-                        <small>Jun 06 2024</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
+              </h2>              
             </div>
           </div>
           <div class="heading-posts-div">
@@ -138,39 +108,27 @@ export let homePageHTML = `
                   width="20px" /></span
               ><i>Newest posts</i>
             </h2>
-          </div>
-          <div class="main-posts-button-container">
-            <div class="main-posts-container">
-              <!-- <div class="post-container">
-              <div class="blog-post">
-                <div class="blog-post_img">
-                  <img
-                    src="assets/image for posts/post-test.jpg"
-                    alt=""
-                    width="100px"
-                  />
-                </div>
-                <div class="blog-post_info">
-                  <h1 class="blog-post_title">POST THREE</h1>
-                  <p class="blog-post_text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                    aliquid nihil quod nisi mollitia assumenda quae reiciendis
-                    molestiae eligendi, fugit ducimus, odit expedita quo ratione
-                    necessitatibus. Eum unde autem aperiam!
-                  </p>
-                  <div class="blog-post_button_and_date">
-                    <div>
-                      <button class="blog-post_button">Read More</button>
-                    </div>
-                    <div class="blog-post_date">
-                      <small>Author</small>
-                      <small>Jun 06 2024</small>
-                    </div>
-                  </div>
-                </div>
+            <div class="main-posts-filters">
+              <div class="main-selects-div">
+                <select class="select-filters-one">
+                <option value="none" selected disabled>Sort by:</option>
+                  <option value="rating">Rating</option>
+                  <option value="month">Month</option>
+                  <option value="date">Date</option>
+                </select>
+                <select class="select-filters-two">
+                  <option value="none" selected disabled>Order by:</option>
+                  <option value="asc">ASC</option>
+                  <option value="desc">DESC</option>
+                </select>
               </div>
-            </div>
-          </div> -->
+              <div class="main-button-filters-div">
+                <button class="posts-filter-button">Filter</button>
+              </div>
+            </div>        
+          </div>          
+          <div class="main-posts-button-container">
+            <div class="main-posts-container">              
             </div>
             <div class="load-more-button-div">
               <button class="load-more-button">Show More</button>
