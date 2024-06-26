@@ -7,6 +7,7 @@ import { registerValidation } from "./javascript files/registerValidation.js";
 import { showMoreButton } from "./javascript files/showMoreButton.js";
 import { landingPageFunc } from "./javascript files/landingPage.js";
 import { renderIndexHTML } from "./javascript files/globalRenderHTML.js";
+import { renderFilteredPosts } from "./javascript files/filterPosts.js";
 
 // Data url
 const dataURL = "/javascript/data/posts.json";
@@ -16,6 +17,10 @@ let indexHTML = document.querySelector(".body-container");
 const landingPageMainContainer = document.querySelector(".landingMain");
 const landingPageButton = document.querySelector(".landing-page-button");
 const outputText = document.querySelector(".output");
+
+// Landing Page js
+
+landingPageFunc(outputText);
 
 landingPageButton.addEventListener("click", () => {
   landingPageMainContainer.style.display = "none";
@@ -39,10 +44,6 @@ const renderRegisterPage = (regiserPage) => {
   });
 };
 
-// Landing Page js
-
-landingPageFunc(outputText);
-
 // HomePage global function
 
 const homePageGlobalFunction = () => {
@@ -54,7 +55,10 @@ const homePageGlobalFunction = () => {
   });
 
   // Fetch data and functions for that
-
+  const searchInput = document.querySelector(".search-input");
+  const selectOneFilter = document.querySelector(".select-filters-one");
+  const selectTwoFilter = document.querySelector(".select-filters-two");
+  const filterButton = document.querySelector(".posts-filter-button");
   const postsContainer = document.querySelector(".main-posts-container");
   const trendingPostsContainer = document.querySelector(
     ".trending-posts-container"
@@ -68,6 +72,14 @@ const homePageGlobalFunction = () => {
       console.log(data);
       renderTrendingPosts(data);
       renderPosts(data);
+
+      searchInput.addEventListener("input", () => {
+        onSearch(data);
+      });
+
+      filterButton.addEventListener("click", () => {
+        filterPosts(selectOneFilter.value, selectTwoFilter.value, data);
+      });
 
       return data;
     } catch (error) {
@@ -157,6 +169,31 @@ const homePageGlobalFunction = () => {
       });
 
     trendingPostsContainer.innerHTML += trendingPostsHTML;
+  };
+
+  const filterPosts = (selectOneValue, selectTwoValue, postsData) => {
+    const postsDataCopy = [...postsData];
+
+    if (selectOneValue === "rating") {
+      if (selectTwoValue === "asc") {
+        postsDataCopy.sort((a, b) => a.rating - b.rating);
+      }
+      if (selectTwoValue === "desc") {
+        postsDataCopy.sort((a, b) => b.rating - a.rating);
+      }
+    }
+
+    if (selectOneValue === "date") {
+      if (selectTwoValue === "asc") {
+        postsDataCopy.sort((a, b) => new Date(b.date) - new Date(a.date));
+      }
+
+      if (selectTwoValue === "desc") {
+        postsDataCopy.sort((a, b) => new Date(a.date) - new Date(b.date));
+      }
+    }
+
+    renderFilteredPosts(postsDataCopy, postsContainer);
   };
 
   // Show more button

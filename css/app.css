@@ -384,6 +384,37 @@ main {
 
 /* Main posts container css */
 
+.main-posts-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background-color: #3a476a;
+  width: 235px;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+.main-selects-div {
+  display: flex;
+  gap: 10px;
+}
+
+.posts-filter-button {
+  height: 25px;
+  width: 45px;
+}
+
+.select-filters-one {
+  width: 75px;
+  height: 25px;
+}
+
+.select-filters-two {
+  width: 75px;
+  height: 25px;
+}
+
 .main-posts-container {
   width: 800px;
   min-height: 600px;
@@ -425,6 +456,9 @@ main {
 /* Css za main posts headrot */
 
 .heading-posts-div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
   width: 800px;
   margin: 0;
   padding: 0;
@@ -820,4 +854,8 @@ input::placeholder {
   .input-box input[type="password"] {
     width: 100%;
   }
+}
+
+.hidden {
+  display: none;
 }
