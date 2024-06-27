@@ -3,7 +3,7 @@ export let homePageHTML = `
       <nav class="navbar">
         <!-- Logo -->
         <a href="#" class="nav-logo"
-          ><img class="nav-logo" src="/assets/logos/navbar-logo.png" alt="Logo "
+          ><img class="nav-logo" src="/assets/logos/logo.png" alt="Logo "
         /></a>
 
         <!-- Search bar -->
@@ -24,10 +24,7 @@ export let homePageHTML = `
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Sample</a>
-          </li>
+          </li>          
           <li class="nav-item">
             <a href="#" class="nav-link open-button" onclick="openForm()"
               >Log in</a
@@ -70,13 +67,13 @@ export let homePageHTML = `
       <!-- Newsletter Popup -->
       <div class="newsletterPopup" style="display: none">
         <div class="newsletterPopup-content">
-          <span class="close-button">Close</span>
+          <span class="close-button"><i class="fa-solid fa-xmark"></i></span>
           <h1>Join our e-mail list!</h1>
           <br />
           <p>Sign up for our weekly updates</p>
           <form>
             <input type="email" placeholder="Your email address" required="" />
-            <p>Coming soon...</p>
+            <p class="coming-soon">Coming soon...</p>
           </form>
         </div>
       </div>

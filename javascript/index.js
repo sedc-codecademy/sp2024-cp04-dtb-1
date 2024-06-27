@@ -196,6 +196,15 @@ const homePageGlobalFunction = () => {
     renderFilteredPosts(postsDataCopy, postsContainer);
   };
 
+  const onSearch = (data) => {
+    let value = searchInput.value;
+    const filteredData = data.filter((post) =>
+      post.title.toLowerCase().includes(value.toLowerCase())
+    );
+
+    renderPosts(filteredData);
+  };
+
   // Show more button
   const showMore = document.querySelector(".load-more-button");
   showMoreButton(5, showMore);
