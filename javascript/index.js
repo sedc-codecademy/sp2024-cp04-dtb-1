@@ -1,13 +1,13 @@
-import {
-  homePageHTML,
-  registerPageHTML,
-} from "./javascript files/pagesHtml.js";
+import { homePageHTML } from "./javascript files/pagesHtml.js";
 import { navbarFunction } from "./javascript files/navbar.js";
-import { registerValidation } from "./javascript files/registerValidation.js";
 import { showMoreButton } from "./javascript files/showMoreButton.js";
 import { landingPageFunc } from "./javascript files/landingPage.js";
 import { renderIndexHTML } from "./javascript files/globalRenderHTML.js";
 import { renderFilteredPosts } from "./javascript files/filterPosts.js";
+import {
+  scrollFunction,
+  topFunction,
+} from "./javascript files/backToTopButton.js";
 
 // Data url
 const dataURL = "/javascript/data/posts.json";
@@ -28,31 +28,10 @@ landingPageButton.addEventListener("click", () => {
   homePageGlobalFunction();
 });
 
-const renderRegisterPage = (regiserPage) => {
-  renderIndexHTML(indexHTML, regiserPage);
-
-  registerValidation();
-
-  const loginLink = document.querySelector(".login-link");
-
-  const registerContainer = document.querySelector(".container");
-
-  loginLink.addEventListener("click", () => {
-    registerContainer.style.display = "none";
-    renderIndexHTML(indexHTML, homePageHTML);
-    homePageGlobalFunction();
-  });
-};
-
 // HomePage global function
 
-const homePageGlobalFunction = () => {
+export const homePageGlobalFunction = () => {
   navbarFunction();
-  const registerButtonLink = document.querySelector(".create-account-link");
-
-  registerButtonLink.addEventListener("click", () => {
-    renderRegisterPage(registerPageHTML);
-  });
 
   // Fetch data and functions for that
   const searchInput = document.querySelector(".search-input");
@@ -74,7 +53,22 @@ const homePageGlobalFunction = () => {
       renderPosts(data);
 
       searchInput.addEventListener("input", () => {
-        onSearch(data);
+        if (searchInput.value.length > 0) {
+          onSearch(data);
+        } else {
+          document.querySelector(".main-container").style.gap = "30px";
+          trendingPostsContainer.style.display = "flex";
+          document.querySelector(".trending-heading-container").style.display =
+            "block";
+          mainPostsHeading.style.width = "235px";
+          mainPostsHeading.innerHTML = `<span
+                ><img
+                  src="./assets/logos/only logo.png"
+                  alt=""
+                  width="20px" /></span
+              ><i>Newest posts</i>`;
+          showMore.classList.remove("loaded");
+        }
       });
 
       filterButton.addEventListener("click", () => {
@@ -168,7 +162,7 @@ const homePageGlobalFunction = () => {
             </div>`;
       });
 
-    trendingPostsContainer.innerHTML += trendingPostsHTML;
+    trendingPostsContainer.innerHTML = trendingPostsHTML;
   };
 
   const filterPosts = (selectOneValue, selectTwoValue, postsData) => {
@@ -196,11 +190,27 @@ const homePageGlobalFunction = () => {
     renderFilteredPosts(postsDataCopy, postsContainer);
   };
 
+  const mainPostsHeading = document.querySelector(".main-posts-heading");
+
   const onSearch = (data) => {
     let value = searchInput.value;
     const filteredData = data.filter((post) =>
       post.title.toLowerCase().includes(value.toLowerCase())
     );
+
+    mainPostsHeading.style.width = "260px";
+    mainPostsHeading.innerHTML = `<span
+                ><img
+                  src="./assets/logos/only logo.png"
+                  alt=""
+                  width="20px" /></span
+              ><i>Searched posts</i>`;
+    // trendingPostsContainer.innerHTML = "";\
+    document.querySelector(".main-container").style.gap = 0;
+    trendingPostsContainer.style.display = "none";
+    document.querySelector(".trending-heading-container").style.display =
+      "none";
+    showMore.classList.add("loaded");
 
     renderPosts(filteredData);
   };
@@ -208,6 +218,18 @@ const homePageGlobalFunction = () => {
   // Show more button
   const showMore = document.querySelector(".load-more-button");
   showMoreButton(5, showMore);
+
+  // Back to  top
+
+  let backToTopBtn = document.querySelector(".back-to-top-button");
+
+  window.onscroll = () => {
+    scrollFunction();
+  };
+
+  backToTopBtn.addEventListener("click", () => {
+    topFunction();
+  });
 
   // Calling fetch data on every homepage open or refresh
   fetchPosts();

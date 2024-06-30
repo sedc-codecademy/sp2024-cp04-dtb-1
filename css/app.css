@@ -55,7 +55,7 @@ a {
   align-items: center;
   padding: 1rem 1.5rem;
   background-color: #283149;
-  height: 120px;
+  height: 90px;
   border-bottom: 1px solid #00cfc8;
 }
 
@@ -92,10 +92,25 @@ a {
   align-items: center;
 }
 
+.post-button-nav {
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.contact-button {
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
 .nav-link {
   font-size: 1.6rem;
-  font-weight: bold;
   color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 00;
 }
 
 .nav-link:hover {
@@ -208,8 +223,8 @@ a {
 .form-popup {
   display: none;
   position: fixed;
-  right: 15px;
-  top: 125px;
+  right: 5px;
+  top: 95px;
   z-index: 9999999;
 }
 
@@ -231,10 +246,16 @@ a {
   border-radius: 5px;
 }
 
+.form-container input[type="text"]::placeholder,
+.form-container input[type="password"]::placeholder {
+  color: #161b28;
+}
+
 .form-container input[type="text"]:focus,
 .form-container input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
+  color: #000;
 }
 
 /* Login button */
@@ -339,6 +360,7 @@ a {
 
 main {
   background-color: #161b28;
+  padding: 20px;
 }
 
 .main-container {
@@ -369,7 +391,6 @@ main {
   width: 800px;
   height: max-content;
   background-color: #161b28;
-  margin-top: 70px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -377,7 +398,14 @@ main {
 
 /* Css za trending posts headrot */
 
+.trending-heading-container {
+  margin-top: 20px;
+  width: 800px;
+}
+
 .trending-heading {
+  display: flex;
+  justify-content: start;
   width: 235px;
   background-color: #3a476a;
   border-radius: 10px;
@@ -426,14 +454,14 @@ main {
 }
 
 .select-filters-one {
-  width: 75px;
+  width: 80px;
   height: 25px;
   border-radius: 5px;
   border: 1px solid white;
 }
 
 .select-filters-two {
-  width: 75px;
+  width: 80px;
   border-radius: 5px;
   height: 25px;
   border: 1px solid white;
@@ -577,6 +605,24 @@ main {
 
 .blog-post_button:hover {
   background-color: #00cfc8;
+}
+
+/* Back to top button */
+
+.back-to-top-button {
+  display: none;
+  background-color: #00cfc8;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10000;
+  width: 60px;
+  height: 40px;
+  border: 1px solid #283149;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
 }
 
 /* Show more func */
@@ -879,6 +925,222 @@ input::placeholder {
   .input-box input[type="password"] {
     width: 100%;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Contact page */
+
+.form {
+  grid-area: form;
+  width: 500px;
+  height: 500px;
+}
+
+.info {
+  grid-area: info;
+  width: 250px;
+  height: 250px;
+}
+
+.map {
+  grid-area: map;
+  width: 250px;
+  height: 240px;
+}
+
+.contact {
+  background: #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.infoBox {
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+
+.infoBox h3 {
+  margin-bottom: 50px;
+}
+
+.contact-main {
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+}
+.box {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: 5fr max-content;
+  grid-template-areas:
+    "form info"
+    "form map";
+  grid-gap: 10px;
+}
+
+.contact h3 {
+  color: #283149;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.formBox {
+  position: relative;
+  width: 100%;
+}
+
+.formBox .row50 {
+  display: flex;
+  gap: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.formBox .row100 .inputBox {
+  width: 100%;
+}
+
+.inputBox span {
+  color: #283149;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.inputBox input {
+  padding: 10px;
+  width: 220px;
+  height: 35px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+}
+
+.inputBox textarea {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  resize: none;
+  min-height: 150px;
+  margin-bottom: 10px;
+}
+
+.send-button {
+  height: 50px;
+}
+.send-button button:hover {
+  background-color: #2d6a4f;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transform: translateX(2px);
+}
+.send-button button:active {
+  background-color: #00cfc8;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.inputBox button {
+  background: #283149;
+  color: #d8f3dc;
+  border: none;
+  font-size: 1.1em;
+  max-width: 120px;
+  height: 50px;
+  font-weight: 500;
+  padding: 15px 15px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  border-radius: 5px;
+}
+
+.inputBox ::placeholder {
+  color: #999;
+}
+
+.info {
+  background-color: #283149;
+}
+
+.info h3 {
+  color: #d8f3dc;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.info .infoBox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info .infoBox div span {
+  min-width: 25px;
+  height: 25px;
+  color: #d8f3dc;
+  background: #283149;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.2em;
+  border-radius: 50%;
+}
+
+.info .infoBox div p {
+  color: #d8f3dc;
+  font-size: 1.1em;
+}
+
+.info .infoBox div a {
+  color: #d8f3dc;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.sci {
+  margin-top: 40px;
+  display: flex;
+}
+
+.sci li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.sci li a {
+  color: #d8f3dc;
+  font-size: 2em;
+  color: #ccc;
+}
+
+.sci li a:hover {
+  color: #d8f3dc;
+}
+
+.map {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .hidden {

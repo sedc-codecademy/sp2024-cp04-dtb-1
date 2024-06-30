@@ -1,6 +1,16 @@
+import {
+  homePageHTML,
+  contactPageHTML,
+  registerPageHTML,
+} from "./pagesHtml.js";
+import {
+  renderContactPage,
+  renderHomePage,
+  renderRegisterPage,
+} from "./renderPagesFunctions.js";
+import { homePageGlobalFunction } from "../index.js";
+
 export const navbarFunction = () => {
-  // Header
-  // Hamburger menu
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
 
@@ -68,5 +78,25 @@ export const navbarFunction = () => {
     ) {
       closeForm();
     }
+  });
+
+  // Navbar buttons
+
+  const registerButtonLink = document.querySelector(".create-account-link");
+
+  registerButtonLink.addEventListener("click", () => {
+    renderRegisterPage(registerPageHTML, homePageHTML);
+  });
+
+  const postNavButton = document.querySelector(".post-button-nav");
+  postNavButton.addEventListener("click", () => {
+    renderHomePage(homePageHTML);
+    homePageGlobalFunction();
+  });
+
+  const contactBtn = document.querySelector(".contact-button");
+  contactBtn.addEventListener("click", () => {
+    renderContactPage(contactPageHTML);
+    navbarFunction();
   });
 };
