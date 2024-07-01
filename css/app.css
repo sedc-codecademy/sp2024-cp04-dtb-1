@@ -90,6 +90,7 @@ a {
   margin-left: 5rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .post-button-nav {
@@ -97,6 +98,7 @@ a {
   color: #fff;
   letter-spacing: 0.5px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .contact-button {
@@ -104,6 +106,7 @@ a {
   color: #fff;
   letter-spacing: 0.5px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .nav-link {
@@ -111,6 +114,7 @@ a {
   color: #fff;
   letter-spacing: 0.5px;
   font-weight: 00;
+  cursor: pointer;
 }
 
 .nav-link:hover {
@@ -288,6 +292,7 @@ a {
 .form-container .create-account-link {
   color: #00cfc8;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .form-container .create-account-link:hover {
@@ -760,6 +765,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.login-link {
+  cursor: pointer;
 }
 
 .form-box {

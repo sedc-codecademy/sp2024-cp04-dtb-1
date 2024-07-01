@@ -1,13 +1,9 @@
+import { renderRegisterPage } from "./renderPagesFunctions.js";
 import {
+  registerPageHTML,
   homePageHTML,
   contactPageHTML,
-  registerPageHTML,
 } from "./pagesHtml.js";
-import {
-  renderContactPage,
-  renderHomePage,
-  renderRegisterPage,
-} from "./renderPagesFunctions.js";
 import { homePageGlobalFunction } from "../index.js";
 
 export const navbarFunction = () => {
@@ -84,19 +80,40 @@ export const navbarFunction = () => {
 
   const registerButtonLink = document.querySelector(".create-account-link");
 
-  registerButtonLink.addEventListener("click", () => {
-    renderRegisterPage(registerPageHTML, homePageHTML);
-  });
+  const bodyHistory = [];
 
-  const postNavButton = document.querySelector(".post-button-nav");
-  postNavButton.addEventListener("click", () => {
-    renderHomePage(homePageHTML);
-    homePageGlobalFunction();
-  });
+  registerHandler();
 
-  const contactBtn = document.querySelector(".contact-button");
-  contactBtn.addEventListener("click", () => {
-    renderContactPage(contactPageHTML);
-    navbarFunction();
-  });
+  function registerHandler() {
+    registerButtonLink.addEventListener("click", () => {
+      history.pushState({}, "", "/register");
+      bodyHistory.push(document.body.innerHTML);
+      renderRegisterPage(registerPageHTML, homePageHTML);
+    });
+
+    document.querySelector(".contact-button").onclick = (_event) => {
+      history.pushState({}, "", "/contact");
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = contactPageHTML;
+      navbarFunction();
+    };
+
+    document.querySelector(".post-button-nav").onclick = (_event) => {
+      history.pushState({}, "", "/");
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = homePageHTML;
+      homePageGlobalFunction();
+    };
+  }
+
+  onpopstate = (_event) => {
+    const previousContent = bodyHistory.pop();
+
+    console.log(previousContent);
+
+    if (previousContent) {
+      document.body.innerHTML = previousContent;
+      registerHandler();
+    }
+  };
 };

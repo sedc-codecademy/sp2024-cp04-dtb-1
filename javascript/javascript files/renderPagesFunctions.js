@@ -12,6 +12,7 @@ export const renderRegisterPage = (regiserPage) => {
 
   loginLink.addEventListener("click", () => {
     registerContainer.style.display = "none";
+    history.pushState({}, "", "/");
     renderIndexHTML(indexHTML, homePageHTML);
     homePageGlobalFunction();
   });
@@ -20,6 +21,7 @@ export const renderRegisterPage = (regiserPage) => {
 export const renderContactPage = (contactPage) => {
   let indexHTML = document.querySelector(".body-container");
   renderIndexHTML(indexHTML, contactPage);
+  navbarFunction();
 };
 
 export const renderHomePage = (homePage) => {
