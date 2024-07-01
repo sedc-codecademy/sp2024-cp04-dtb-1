@@ -2,7 +2,7 @@ export let homePageHTML = `
 <header class="header">
       <nav class="navbar">
         <!-- Logo -->
-        <a href="#" class="nav-logo"
+        <a href="/" class="nav-logo"
           ><img class="nav-logo" src="/assets/logos/logo.png" alt="Logo "
         /></a>
 
@@ -17,21 +17,21 @@ export let homePageHTML = `
         <!-- Desktop Nav menu -->
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="post-button-nav">Post</a>
+            <a class="post-button-nav" >Post</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" id="NewsletterPopUp">Newsletter</a>
+            <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About Us</a>
+            <a href="/about" class="nav-link">About Us</a>
           </li>          
           <li class="nav-item">
-            <a href="#" class="nav-link open-button" onclick="openForm()"
+            <a class="nav-link open-button" onclick="openForm()"
               >Log in</a
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="contact-button">Contact</a>
+            <a class="contact-button">Contact</a>
           </li>
         </ul>
 
@@ -59,7 +59,7 @@ export let homePageHTML = `
           <button type="submit" class="login-form-button">Login</button>
           <p class="new-reader">
             New reader?
-            <a href="#" class="create-account-link">Create an account.</a>
+            <a class="create-account-link">Create an account.</a>
           </p>
         </form>
       </div>
@@ -205,7 +205,7 @@ export let homePageHTML = `
           <section class="infoone">
             <menu>
               <h2>Support</h2>
-              <li><a href=""> Contact</a></li>
+              <li><a> Contact</a></li>
               <li><a href=""> Help Center</a></li>
               <li><a href=""> Site Map</a></li>
               <li><a href=""> Professional Services</a></li>
@@ -279,7 +279,7 @@ export let registerPageHTML = `<div class="container">
     </div>
     <div class="group">
       <span class="login-link"
-        >Already have an account? <a href="#">Login</a></span
+        >Already have an account? <a class="login-link-a">Login</a></span
       >
     </div>
   </form>
@@ -295,7 +295,7 @@ export let registerPageHTML = `<div class="container">
 export let contactPageHTML = `<header class="header">
       <nav class="navbar">
         <!-- Logo -->
-        <a href="#" class="nav-logo"
+        <a href="/" class="nav-logo"
           ><img class="nav-logo" src="/assets/logos/logo.png" alt="Logo "
         /></a>
 
@@ -310,21 +310,21 @@ export let contactPageHTML = `<header class="header">
         <!-- Desktop Nav menu -->
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="post-button-nav">Post</a>
+            <a class="post-button-nav">Post</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" id="NewsletterPopUp">Newsletter</a>
+            <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About Us</a>
+            <a href="/about" class="nav-link">About Us</a>
           </li>          
           <li class="nav-item">
-            <a href="#" class="nav-link open-button" onclick="openForm()"
+            <a class="nav-link open-button" onclick="openForm()"
               >Log in</a
             >
           </li>
           <li class="nav-item">
-            <a href="#footer" class="nav-link">Contact</a>
+            <a class="contact-button">Contact</a>
           </li>
         </ul>
         <!-- Hamburger nav menu -->
@@ -351,7 +351,7 @@ export let contactPageHTML = `<header class="header">
           <button type="submit" class="login-form-button">Login</button>
           <p class="new-reader">
             New reader?
-            <a href="#" class="create-account-link">Create an account.</a>
+            <a class="create-account-link">Create an account.</a>
           </p>
         </form>
       </div>
@@ -485,7 +485,7 @@ export let contactPageHTML = `<header class="header">
           <section class="infoone">
             <menu>
               <h2>Support</h2>
-              <li><a href=""> Contact</a></li>
+              <li><a>Contact</a></li>
               <li><a href=""> Help Center</a></li>
               <li><a href=""> Site Map</a></li>
               <li><a href=""> Professional Services</a></li>

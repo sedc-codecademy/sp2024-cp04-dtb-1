@@ -9,6 +9,8 @@ import {
   topFunction,
 } from "./javascript files/backToTopButton.js";
 
+import { renderPostInPostPage } from "./javascript files/renderPostInPostPage.js";
+
 // Data url
 const dataURL = "/javascript/data/posts.json";
 
@@ -234,3 +236,33 @@ export const homePageGlobalFunction = () => {
   // Calling fetch data on every homepage open or refresh
   fetchPosts();
 };
+
+// const route = (event) => {
+//   event = event || window.event;
+//   event.preventDefault();
+//   window.history.pushState({}, "", event.target.href);
+//   handleLocation();
+// };
+
+// const routes = {
+//   "/": homePageHTML,
+//   "/contact": contactPageHTML,
+//   "/register": registerPageHTML,
+// };
+
+// const handleLocation = async () => {
+//   const path = window.location.pathname;
+//   const route = routes[path];
+//   console.log(route);
+//   try {
+//     const html = await fetch(route).then((data) => data.text());
+//     document.body.innerHTML = html;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// window.onpopstate = handleLocation;
+// window.route = route;
+
+// handleLocation();
