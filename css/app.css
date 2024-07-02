@@ -1360,6 +1360,7 @@ input::placeholder {
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
+  color: white;
 }
 
 .aboutUs-container h2 {
@@ -1374,6 +1375,7 @@ input::placeholder {
 }
 .aboutUs-container p {
   font-size: 15px;
+  color: white;
 }
 .aboutUs-container-one {
   display: grid;
