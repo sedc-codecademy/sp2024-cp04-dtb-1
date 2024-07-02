@@ -8,7 +8,6 @@ import {
   scrollFunction,
   topFunction,
 } from "./javascript files/backToTopButton.js";
-
 import { renderPostInPostPage } from "./javascript files/renderPostInPostPage.js";
 
 // Data url
@@ -106,7 +105,7 @@ export const homePageGlobalFunction = () => {
                   </p>
                   <div class="blog-post_button_and_date">
                     <div>
-                      <button class="blog-post_button">Read More</button>
+                      <button class="blog-post_button"}>Read More</button>
                     </div>
                     <div class="blog-post_date">
                       <div>
@@ -132,20 +131,20 @@ export const homePageGlobalFunction = () => {
     posts
       .filter((post) => post.rating >= 5)
       .slice(0, 2)
-      .map((post) => {
+      .map((filterdPost) => {
         trendingPostsHTML += `<div class="post-container">
               <div class="blog-post">
                 <div class="blog-post_img">
                   <img
-                    src=${post.image}
+                    src=${filterdPost.image}
                     alt=""
                     height="45px"
                   />
                 </div>
                 <div class="blog-post_info">
-                  <h1 class="blog-post_title">${post.title}</h1>
+                  <h1 class="blog-post_title">${filterdPost.title}</h1>
                   <p class="blog-post_text">
-                  ${post.description}
+                  ${filterdPost.description}
                   </p>
                   <div class="blog-post_button_and_date">
                     <div>
@@ -153,10 +152,10 @@ export const homePageGlobalFunction = () => {
                     </div>
                     <div class="blog-post_date">
                       <div>
-                        <small>${post.author}</small>
-                        <small>${post.date}</small>
+                        <small>${filterdPost.author}</small>
+                        <small>${filterdPost.date}</small>
                       </div>
-                      <small class="post-rating">${post.rating}⭐</small>
+                      <small class="post-rating">${filterdPost.rating}⭐</small>
                     </div>
                   </div>
                 </div>
@@ -207,7 +206,6 @@ export const homePageGlobalFunction = () => {
                   alt=""
                   width="20px" /></span
               ><i>Searched posts</i>`;
-    // trendingPostsContainer.innerHTML = "";\
     document.querySelector(".main-container").style.gap = 0;
     trendingPostsContainer.style.display = "none";
     document.querySelector(".trending-heading-container").style.display =

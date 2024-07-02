@@ -23,7 +23,7 @@ export let homePageHTML = `
             <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
           </li>
           <li class="nav-item">
-            <a href="/about" class="nav-link">About Us</a>
+            <a class="about-us-button">About Us</a>
           </li>          
           <li class="nav-item">
             <a class="nav-link open-button" onclick="openForm()"
@@ -316,7 +316,7 @@ export let contactPageHTML = `<header class="header">
             <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
           </li>
           <li class="nav-item">
-            <a href="/about" class="nav-link">About Us</a>
+            <a class="about-us-button">About Us</a>
           </li>          
           <li class="nav-item">
             <a class="nav-link open-button" onclick="openForm()"
@@ -440,6 +440,213 @@ export let contactPageHTML = `<header class="header">
  </div>
 </div>
 </section>
+    </main>
+    <footer id="footer">
+      <div class="divflex">
+        <section class="footer-section">
+          <section>
+            <img
+              class="logo"
+              src="../assets/logos/logo.png"
+              title="logo"
+              alt="logo"
+            />
+            <address class="address">
+              <li>Ul.Makedonija bb</li>
+              <li>1000,Skopje</li>
+              <li>+00389 02 2465672</li>
+              <li>info@techspehere.com.mk</li>
+            </address>
+
+            <span class="social-links">
+              <h2>Follow Us</h2>
+              <a href="#"
+                ><img
+                  class="facebook"
+                  src="../assets/image for social media/facebook_145802.png"
+                  alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  class="instagram"
+                  src="../assets/image for social media/instagram_2111463.png"
+                  alt="Instagram"
+                />
+              </a>
+              <a href="#"
+                ><img
+                  class="linkedin"
+                  src="../assets/image for social media/linkedin_145807.png"
+                  alt="Linkedin"
+                />
+              </a>
+            </span>
+          </section>
+          <section class="infoone">
+            <menu>
+              <h2>Support</h2>
+              <li><a>Contact</a></li>
+              <li><a href=""> Help Center</a></li>
+              <li><a href=""> Site Map</a></li>
+              <li><a href=""> Professional Services</a></li>
+            </menu>
+          </section>
+          <section class="infotwoo">
+            <menu>
+              <h2>Company</h2>
+              <li><a href=""> About Us</a></li>
+              <li><a href=""> Careers</a></li>
+              <li><a href=""> Newsroom</a></li>
+              <li><a href=""> Resources</a></li>
+            </menu>
+          </section>
+        </section>
+      </div>
+      <section class="infothree">
+        <li><a href=""> Terms of use</a></li>
+        <li><a href=""> Privacy Notice</a></li>
+        <li><a href=""> Cookie Policy</a></li>
+        <li><a href=""> FAQ</a></li>
+      </section>
+      <section class="footer-botom">
+        Copyright &copy; 2024 - All Rights Reserved - TECH Sphere
+      </section>
+    </footer>`;
+
+export let aboutUsPageHTML = `
+<header class="header">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="/" class="nav-logo"
+          ><img class="nav-logo" src="/assets/logos/logo.png" alt="Logo "
+        /></a>
+
+        <!-- Search bar -->
+        <div class="search-form">
+          <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search" />
+          </div>
+        </div>
+
+        <!-- Desktop Nav menu -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="post-button-nav">Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a class="about-us-button">About Us</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link open-button" onclick="openForm()"
+              >Log in</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="contact-button">Contact</a>
+          </li>
+        </ul>
+        <!-- Hamburger nav menu -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <!-- Login popup -->
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+          <!-- <label for="email"><b>Email</b></label> -->
+          <input type="text" placeholder="Enter E-mail" name="email" required />
+          <!-- <label for="psw"><b>Password</b></label> -->
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+          <button type="submit" class="login-form-button">Login</button>
+          <p class="new-reader">
+            New reader?
+            <a class="create-account-link">Create an account.</a>
+          </p>
+        </form>
+      </div>
+      <!-- Newsletter Popup -->
+      <div class="newsletterPopup" style="display: none">
+        <div class="newsletterPopup-content">
+          <span class="close-button"><i class="fa-solid fa-xmark"></i></span>
+          <h1>Join our e-mail list!</h1>
+          <br />
+          <p>Sign up for our weekly updates</p>
+          <form>
+            <input type="email" placeholder="Your email address" required="" />
+            <p class="coming-soon">Coming soon...</p>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="aboutUs-container">
+      <div class="aboutUs-container-one">
+        <div class="aboutUs-one">
+          <h2 class="aboutUs-header">About Us</h2>
+          <div class="text-one">
+            <p>
+              Welcome to TECH Sphere Blog your go-to destination for all things
+              tech! We are a passionate team of tech enthusiasts dedicated to
+              bringing you the latest news, in-depth reviews, and insightful
+              analysis of the ever-evolving world of technology. Our team is
+              composed of experienced tech writers, analysts, and enthusiasts
+              who share a deep passion for technology. With diverse backgrounds
+              and expertise, we bring a balanced perspective to our content,
+              ensuring it is both accurate and insightful.
+            </p>
+            <h3 class="aboutUs-subheader">Our Mission</h3>
+            <p>
+              At TECH Sphere Blog, our mission is to empower our readers with
+              knowledge and insights into the tech landscape. Whether you're a
+              seasoned tech guru or a curious beginner, we aim to provide
+              content that is both informative and engaging, helping you stay
+              ahead in a fast-paced digital world.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="img-about"
+            src="./assets/img for about us/1000_F_282753146_V6ZHcruFiIauT4ecZyf9a2J066LD2K9N.jpg"
+            width="560"
+          />
+        </div>
+      </div>
+      <div class="aboutUs-container-two">
+        <div>
+          <img
+            class="img-about2"
+            src="./assets/img for about us/wp2848527.webp"
+            width="560"
+          />
+        </div>
+        <div class="text-two">
+          <h3 class="aboutUs-subheader">What We Cover</h3>
+          <p>
+            Tech News: Stay updated with the latest happenings in the tech
+            industry, from groundbreaking innovations to emerging trends. Gadget
+            Reviews: In-depth reviews and hands-on impressions of the latest
+            gadgets, helping you make informed decisions. How-To Guides:
+            Step-by-step tutorials and guides to help you navigate and maximize
+            your tech devices and software. Opinion Pieces: Thought-provoking
+            articles and commentary on the implications of tech developments and
+            trends. Industry Analysis: Comprehensive analysis of market trends,
+            product launches, and industry movements.
+          </p>
+        </div>
+      </div>
     </main>
     <footer id="footer">
       <div class="divflex">

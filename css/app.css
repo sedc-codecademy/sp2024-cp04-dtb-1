@@ -108,6 +108,13 @@ a {
   font-weight: 400;
   cursor: pointer;
 }
+.about-us-button {
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  cursor: pointer;
+}
 
 .nav-link {
   font-size: 1.6rem;
@@ -1154,4 +1161,257 @@ input::placeholder {
 
 .hidden {
   display: none;
+}
+
+/* Post page css */
+
+.container_page {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.post-page-header-container {
+  padding: 20px 200px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.post-page-image-div-container {
+  display: grid;
+  place-items: center;
+}
+
+.main-image {
+  width: 50%;
+  height: auto;
+  padding-top: 10px;
+}
+
+.post-page-text-div-container {
+  padding: 50px 200px;
+  font-size: 18px;
+}
+
+.post-page-text-div-container p {
+  color: #ffffff;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+  padding: 20px 200px;
+  gap: 15px;
+}
+
+.btn button {
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+  border: 1px solid #00cfc8;
+  background: #3a476a;
+  color: #00cfc8;
+  cursor: pointer;
+}
+
+/* Comment page*/
+
+.comment-post-page-div-container {
+  width: 100%;
+  padding: 50px 200px;
+}
+
+.container_comment {
+  background: #3a476a;
+  border-radius: 10px;
+  padding: 40px;
+  font-family: monospace;
+  width: 100%;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  margin: 10px 0;
+  font-family: sans-serif;
+}
+
+.commentbox {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.commentbox img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  width: 100%;
+}
+
+.user {
+  margin: 5px 0;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.commentinput input {
+  padding: 10px;
+  border-bottom: 2px solid #00cfc8;
+  background: #ffffff;
+  margin-bottom: 10px;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  background: #3a476a;
+  color: #00cfc8;
+  border-radius: 5px;
+  border: 1px solid #00cfc8;
+  cursor: pointer;
+}
+
+.buttons button.abled {
+  background: #00cfc8;
+  color: #fff;
+}
+
+.policy {
+  margin: 20px 0;
+  font-size: 1.3em;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.policy a {
+  text-decoration: none;
+  color: #00cfc8;
+}
+
+.parents {
+  font-family: Arial, sans-serif;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.parents h1 {
+  font-size: 2em;
+}
+
+.parents p {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.parents img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.engagements {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.engagements img {
+  width: 20px;
+}
+
+.engagements img:nth-child(1) {
+  margin-right: 10px;
+  width: 25px;
+}
+
+.date {
+  color: #808080;
+  font-size: 0.8em;
+}
+
+/* About us */
+.aboutUs-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.aboutUs-container h2 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.aboutUs-container h3 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.aboutUs-container p {
+  font-size: 15px;
+}
+.aboutUs-container-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.aboutUs-container-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.aboutUs-container img {
+  height: 280px;
+}
+.aboutUs-one {
+  display: grid;
+  gap: 20px;
+}
+.text-one {
+  display: grid;
+  gap: 10px;
+}
+.text-two {
+  display: grid;
+  gap: 10px;
+}
+.img-about {
+  padding-top: 20px;
+  border-top-left-radius: 28%;
+  border-bottom-left-radius: 55%;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 16%;
+}
+.img-about2 {
+  padding-top: 20px;
+  border-top-left-radius: 38%;
+  border-bottom-left-radius: 55%;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 16%;
 }

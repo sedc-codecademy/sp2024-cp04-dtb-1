@@ -1,8 +1,12 @@
-import { renderRegisterPage } from "./renderPagesFunctions.js";
+import {
+  renderAboutUsPage,
+  renderRegisterPage,
+} from "./renderPagesFunctions.js";
 import {
   registerPageHTML,
   homePageHTML,
   contactPageHTML,
+  aboutUsPageHTML,
 } from "./pagesHtml.js";
 import { homePageGlobalFunction } from "../index.js";
 
@@ -95,6 +99,14 @@ export const navbarFunction = () => {
       history.pushState({}, "", "/contact");
       bodyHistory.push(document.body.innerHTML);
       document.body.innerHTML = contactPageHTML;
+      navbarFunction();
+    };
+
+    document.querySelector(".about-us-button").onclick = (_event) => {
+      history.pushState({}, "", "/about");
+      console.log("click");
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = aboutUsPageHTML;
       navbarFunction();
     };
 

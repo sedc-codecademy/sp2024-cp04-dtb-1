@@ -1,118 +1,138 @@
-import  postsData  from "../data/posts.json" with { type: "json" };
 import { renderIndexHTML } from "./globalRenderHTML.js";
 import { navbarFunction } from "./navbar.js";
 
-export const renderPostInPostPage = (postId) => {
-  let posts = postsData;
-  console.log(posts);
-  let postPageHTML = "";
+export const renderPostInPostPage = (post) => {
+  console.log(post);
+  navbarFunction();
 
-  posts
-    .filter((post) => post.id === postId)
-    .map(
-      (foundPost) =>
-        (postPageHTML = `
-      <header class="header">
-      <nav class="navbar">
-        <!-- Logo -->
-        <a href="#" class="nav-logo"
-          ><img class="nav-logo" src="/assets/logos/logo.png" alt="Logo "
-        /></a>
+  let postPageHTML = `
+  <header class="header">
+     <nav class="navbar">
+       <!-- Logo -->
+       <a href="#" class="nav-logo"
+         ><img class="nav-logo" src="/assets/logos/logo.png" alt="Logo "
+       /></a>
 
-        <!-- Search bar -->
-        <div class="search-form">
-          <div class="search-wrapper">
-            <i class="fas fa-search search-icon"></i>
-            <input type="text" class="search-input" placeholder="Search" />
-          </div>
-        </div>
+       <!-- Search bar -->
+       <div class="search-form">
+         <div class="search-wrapper">
+           <i class="fas fa-search search-icon"></i>
+           <input type="text" class="search-input" placeholder="Search" />
+         </div>
+       </div>
 
-        <!-- Desktop Nav menu -->
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="#" class="post-button-nav">Post</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" id="NewsletterPopUp">Newsletter</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About Us</a>
-          </li>          
-          <li class="nav-item">
-            <a href="#" class="nav-link open-button" onclick="openForm()"
-              >Log in</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#" class="contact-button">Contact</a>
-          </li>
-        </ul>
+       <!-- Desktop Nav menu -->
+       <ul class="nav-menu">
+         <li class="nav-item">
+           <a href="/" class="post-button-nav">Post</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
+         </li>
+         <li class="nav-item">
+           <a href="/about" class="nav-link">About Us</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link open-button" onclick="openForm()"
+             >Log in</a
+           >
+         </li>
+         <li class="nav-item">
+           <a href="/contact" class="contact-button">Contact</a>
+         </li>
+       </ul>
 
-        <!-- Hamburger nav menu -->
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
+       <!-- Hamburger nav menu -->
+       <div class="hamburger">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+       </div>
+     </nav>
 
-      <!-- Login popup -->
-      <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-          <h1>Login</h1>
-          <!-- <label for="email"><b>Email</b></label> -->
-          <input type="text" placeholder="Enter E-mail" name="email" required />
-          <!-- <label for="psw"><b>Password</b></label> -->
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required
-          />
-          <button type="submit" class="login-form-button">Login</button>
-          <p class="new-reader">
-            New reader?
-            <a href="#" class="create-account-link">Create an account.</a>
-          </p>
-        </form>
-      </div>
+     <!-- Login popup -->
+     <div class="form-popup" id="myForm">
+       <form action="/action_page.php" class="form-container">
+         <h1>Login</h1>
+         <!-- <label for="email"><b>Email</b></label> -->
+         <input type="text" placeholder="Enter E-mail" name="email" required />
+         <!-- <label for="psw"><b>Password</b></label> -->
+         <input
+           type="password"
+           placeholder="Enter Password"
+           name="psw"
+           required
+         />
+         <button type="submit" class="login-form-button">Login</button>
+         <p class="new-reader">
+           New reader?
+           <a href="#" class="create-account-link">Create an account.</a>
+         </p>
+       </form>
+     </div>
 
-      <!-- Newsletter Popup -->
-      <div class="newsletterPopup" style="display: none">
-        <div class="newsletterPopup-content">
-          <span class="close-button"><i class="fa-solid fa-xmark"></i></span>
-          <h1>Join our e-mail list!</h1>
-          <br />
-          <p>Sign up for our weekly updates</p>
-          <form>
-            <input type="email" placeholder="Your email address" required="" />
-            <p class="coming-soon">Coming soon...</p>
-          </form>
-        </div>
-      </div>
-    </header>
-    <main id="main">
-    <section class="post-page-section">
-      <div class="image-post-page-div">
-        <img src=${foundPost.image} alt="Post image" />
-      </div>
-      <div class="text-post-page-div">
-        <div>
-          <h2 class="post-page-title">${foundPost.title}</h2>
+     <!-- Newsletter Popup -->
+     <div class="newsletterPopup" style="display: none">
+       <div class="newsletterPopup-content">
+         <span class="close-button"><i class="fa-solid fa-xmark"></i></span>
+         <h1>Join our e-mail list!</h1>
+         <br />
+         <p>Sign up for our weekly updates</p>
+         <form>
+           <input type="email" placeholder="Your email address" required="" />
+           <p class="coming-soon">Coming soon...</p>
+         </form>
+       </div>
+     </div>
+   </header>  
+        <main id="main">
+        <div class="container_page">
+        <div class="post-page-header-container">
+            <h1 class="post-page-hader-h1">${post.title}</h1>
         </div>
         <div>
-          <p class="post-page-text">${foundPost.text}/p>
+            <div class="post-page-image-div-container">
+              <img src="${post.image}" alt="Campfire for Vision Pro" class="main-image">
+            </div>
+            <div class="post-page-text-div-container">
+            <p>${post.text}</p>
+            <p>#${post.tag}</p>
+            </div>
+            <div class="btn">
+                <button><i class="fa-regular fa-star" onclick="ChangeIcon(this)"></i></button>
+                <button><i class="fa-solid fa-share-nodes"></i></button>
+            </div>
         </div>
-        <div>
-          <strong class="post-page-tags">${foundPost.tag}</strong>
-          <strong class="post-page-author-date">${foundPost.author}, ${foundPost.date}</strong>
-          <strong class="post-page-rating">${foundPost.rating}</strong>
+        <div class="comment-post-page-div-container">
+        <div class="container_comment">
+            <div class="head">
+                <h1>COMMENT</h1>
+            </div>
+            <div><span id="comment">0</span> Comments</div>
+            <div class="text">
+                <p>We are happy to hear from you!</p>
+            </div>
+            <div class="comments"></div>
+            <div class="commentbox">
+                <img src="photo/user.jpg" alt="">
+                <div class="content">
+                    <h2>Comment as: </h2>
+                    <input type="text" placeholder="Enter your name" class="user">
+                    <div class="commentinput">
+                        <input type="text" placeholder="Enter comment" class="usercomment">
+                        <div class="buttons">
+                            <button type="submit" id="publish">PUBLISH</button>
+                        </div>
+                    </div>
+                    <p class="policy">This site is procted by reCAPTCHA and the Google <a href="">privacy policy</a> and
+                        <a href="">Terms of Service</a> apply.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="comment-like-post-div"></div>
-    </section>    
-    </main>
-     <footer id="footer">
+        </div>
+        </main>
+        <footer id="footer">
       <div class="divflex">
         <section class="footer-section">
           <section>
@@ -182,11 +202,69 @@ export const renderPostInPostPage = (postId) => {
       <section class="footer-botom">
         Copyright &copy; 2024 - All Rights Reserved - TECH Sphere
       </section>
-    </footer>
-      `)
-    );
+    </footer>`;
 
-  let indexHTML = document.querySelector(".body-container");  
+  // let ChangeIcon = function (icon) {
+  //   icon.classList.toggle("fa-star-half-stroke");
+  // };
+
+  // const USERID = {
+  //   name: null,
+  //   identity: null,
+  //   image: null,
+  //   message: null,
+  //   date: null,
+  // };
+
+  // const userComment = document.querySelector(".usercomment");
+  // const publishBtn = document.querySelector("#publish");
+  // const comments = document.querySelector(".comments");
+  // const userName = document.querySelector(".user");
+  // const notify = document.querySelector(".notifyinput");
+
+  // userComment.addEventListener("input", () => {
+  //   if (!userComment.value) {
+  //     publishBtn.setAttribute("disabled", "disabled");
+  //     publishBtn.classList.remove("abled");
+  //   } else {
+  //     publishBtn.removeAttribute("disabled");
+  //     publishBtn.classList.add("abled");
+  //   }
+  // });
+
+  // function addPost() {
+  //   if (!userComment.value) return;
+  //   USERID.name = userName.value;
+  //   if (USERID.name === "Anonymous") {
+  //     USERID.identity = false;
+  //     USERID.image = "photo/profile.jpg";
+  //   } else {
+  //     USERID.identity = true;
+  //     USERID.image = "photo/user.jpg";
+  //   }
+
+  //   USERID.message = userComment.value;
+  //   USERID.date = new Date().toLocaleString();
+  //   let published = `<div class="parents">
+  //                       <img src="${USERID.image}">
+  //                       <div>
+  //                           <h1>${USERID.name}</h1>
+  //                           <p>${USERID.message}</p>
+  //                           <span class="date">${USERID.date}</span>
+  //                       </div>
+  //                   </div>`;
+
+  //   comments.innerHTML += published;
+  //   userComment.value = "";
+  //   publishBtn.classList.remove("abled");
+
+  //   let commentsNum = document.querySelectorAll(".parents").length;
+  //   document.getElementById("comment").textContent = commentsNum;
+  // }
+
+  // publishBtn.addEventListener("click", addPost);
+
+  let indexHTML = document.querySelector(".body-container");
   renderIndexHTML(indexHTML, postPageHTML);
-  navbarFunction();
+  history.pushState({}, "", "/post");
 };

@@ -29,3 +29,9 @@ export const renderHomePage = (homePage) => {
   renderIndexHTML(indexHTML, homePage);
   homePageGlobalFunction();
 };
+
+export const renderAboutUsPage = (aboutUsPageHTML) => {
+  let indexHTML = document.querySelector(".body-container");
+  renderIndexHTML(indexHTML, aboutUsPageHTML);
+  navbarFunction();
+};
