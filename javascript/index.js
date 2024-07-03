@@ -59,7 +59,7 @@ export const homePageGlobalFunction = () => {
 
       searchInput.addEventListener("input", () => {
         if (searchInput.value.length > 0) {
-          onSearch(data);
+          onSearch(data, postsContainer);
         } else {
           document.querySelector(".main-container").style.gap = "30px";
           trendingPostsContainer.style.display = "flex";
@@ -113,11 +113,12 @@ export const homePageGlobalFunction = () => {
 
   const mainPostsHeading = document.querySelector(".main-posts-heading");
 
-  const onSearch = (data) => {
+  const onSearch = (data, container) => {
     let value = searchInput.value;
     const filteredData = data.filter((post) =>
       post.title.toLowerCase().includes(value.toLowerCase())
     );
+    console.log(filteredData);
 
     mainPostsHeading.style.width = "260px";
     mainPostsHeading.innerHTML = `<span
@@ -131,8 +132,8 @@ export const homePageGlobalFunction = () => {
     document.querySelector(".trending-heading-container").style.display =
       "none";
     showMore.classList.add("loaded");
-
-    renderPostList(filteredData, postsContainer);
+    container.innerHTML = "";
+    renderPostList(filteredData, container);
   };
 
   // Show more button
