@@ -1,8 +1,7 @@
 import { renderPostInPostPage } from "../javascript files/renderPostInPostPage.js";
 
 export const renderPostList = (posts, container) => {
-  const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-  for (const post of sortedPosts) {
+  for (const post of posts) {
     const postContainerEl = document.createElement("DIV");
 
     postContainerEl.classList.add("post-container");

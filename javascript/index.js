@@ -52,7 +52,10 @@ export const homePageGlobalFunction = () => {
 
       console.log(data);
       renderTrendingPostList(data, trendingPostsContainer);
-      renderPostList(data, postsContainer);
+      renderPostList(
+        data.sort((a, b) => new Date(b.date) - new Date(a.date)),
+        postsContainer
+      );
 
       searchInput.addEventListener("input", () => {
         if (searchInput.value.length > 0) {
@@ -129,7 +132,7 @@ export const homePageGlobalFunction = () => {
       "none";
     showMore.classList.add("loaded");
 
-    renderPosts(filteredData);
+    renderPostList(filteredData, postsContainer);
   };
 
   // Show more button
@@ -151,33 +154,3 @@ export const homePageGlobalFunction = () => {
   // Calling fetch data on every homepage open or refresh
   fetchPosts();
 };
-
-// const route = (event) => {
-//   event = event || window.event;
-//   event.preventDefault();
-//   window.history.pushState({}, "", event.target.href);
-//   handleLocation();
-// };
-
-// const routes = {
-//   "/": homePageHTML,
-//   "/contact": contactPageHTML,
-//   "/register": registerPageHTML,
-// };
-
-// const handleLocation = async () => {
-//   const path = window.location.pathname;
-//   const route = routes[path];
-//   console.log(route);
-//   try {
-//     const html = await fetch(route).then((data) => data.text());
-//     document.body.innerHTML = html;
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-
-// window.onpopstate = handleLocation;
-// window.route = route;
-
-// handleLocation();

@@ -128,4 +128,16 @@ export const navbarFunction = () => {
       registerHandler();
     }
   };
+
+  const toggle = document.querySelector("#toggle");
+
+  let isLight = true;
+
+  function modeSwitch() {
+    isLight = !isLight;
+    isLight ? (toggle.innerText = "🌞") : (toggle.innerText = "🌚");
+    var rootElement = document.body;
+    rootElement.classList.toggle("lightMode");
+  }
+  toggle.addEventListener("click", modeSwitch);
 };

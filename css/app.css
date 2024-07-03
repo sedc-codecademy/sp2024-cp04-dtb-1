@@ -12,6 +12,22 @@ Celosno svetlo siva nijansa - #03fff6
 
 /* Body css, deafult css */
 
+:root {
+  --bg-color: #161b28;
+  --bg-light: #283149;
+  --bg-grey: #3a476a;
+  --font-color: #ffffff;
+  --border-hover-color: #00cfc8;
+}
+
+.lightMode {
+  --bg-color: #ffffff;
+  --bg-light: #283149;
+  --bg-grey: #3a476a;
+  --font-color: #ffffff;
+  --border-hover-color: #00cfc8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +40,7 @@ Celosno svetlo siva nijansa - #03fff6
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", "Lato", sans-serif;
-  background-color: #161b28;
+  background-color: var(--bg-color);
 }
 
 html {
@@ -54,14 +70,14 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #283149;
+  background-color: var(--bg-light);
   height: 90px;
-  border-bottom: 1px solid #00cfc8;
+  border-bottom: 1px solid var(--border-hover-color);
 }
 
 /*Hamburger menu */
 .coming-soon {
-  color: #00cfc8;
+  color: var(--border-hover-color);
 }
 
 .hamburger {
@@ -75,7 +91,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: var(--font-color);
 }
 
 .nav-menu {
@@ -95,7 +111,7 @@ a {
 
 .post-button-nav {
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--font-color);
   letter-spacing: 0.5px;
   font-weight: 400;
   cursor: pointer;
@@ -103,14 +119,14 @@ a {
 
 .contact-button {
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--font-color);
   letter-spacing: 0.5px;
   font-weight: 400;
   cursor: pointer;
 }
 .about-us-button {
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--font-color);
   letter-spacing: 0.5px;
   font-weight: 400;
   cursor: pointer;
@@ -118,14 +134,14 @@ a {
 
 .nav-link {
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--font-color);
   letter-spacing: 0.5px;
   font-weight: 00;
   cursor: pointer;
 }
 
 .nav-link:hover {
-  color: #00cfc8;
+  color: var(--border-hover-color);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -134,7 +150,7 @@ a {
     left: -100%;
     top: 12rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--font-color);
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -151,7 +167,7 @@ a {
   }
 
   .nav-item a {
-    color: #283149;
+    color: var(--bg-light);
   }
 
   .hamburger {
@@ -190,7 +206,7 @@ a {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  color: white;
+  color: var(--font-color);
 }
 
 .search-input {
@@ -201,7 +217,7 @@ a {
   border: none;
   border-radius: 15px;
   background-color: #212a31;
-  color: white;
+  color: var(--font-color);
 }
 
 .search-input:focus {
@@ -242,8 +258,8 @@ a {
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background-color: #283149;
-  color: white;
+  background-color: var(--bg-light);
+  color: var(--font-color);
   border-radius: 5px;
 }
 
@@ -253,26 +269,26 @@ a {
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: var(--font-color);
   border-radius: 5px;
 }
 
 .form-container input[type="text"]::placeholder,
 .form-container input[type="password"]::placeholder {
-  color: #161b28;
+  color: var(--bg-color);
 }
 
 .form-container input[type="text"]:focus,
 .form-container input[type="password"]:focus {
-  background-color: #ddd;
+  background-color: var(--font-color);
   outline: none;
-  color: #000;
+  color: var(--bg-color);
 }
 
 /* Login button */
 .form-container .login-form-button {
-  background-color: #00cfc8;
-  color: white;
+  background-color: var(--border-hover-color);
+  color: var(--font-color);
   padding: 16px 20px;
   border: none;
   cursor: pointer;
@@ -292,12 +308,12 @@ a {
 .form-container .new-reader {
   text-align: center;
   margin-top: 10px;
-  color: white;
+  color: var(--font-color);
   font-size: 13px;
 }
 
 .form-container .create-account-link {
-  color: #00cfc8;
+  color: var(--border-hover-color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -312,7 +328,7 @@ a {
   right: 10px;
   cursor: pointer;
   font-size: 20px;
-  color: white;
+  color: var(--font-color);
 }
 
 .close-button:hover {
@@ -334,7 +350,7 @@ a {
 }
 
 .newsletterPopup-content {
-  background-color: #283149;
+  background-color: var(--bg-light);
   padding: 20px;
   border-radius: 5px;
   width: 400px;
@@ -343,12 +359,12 @@ a {
 }
 
 .newsletterPopup-content h1 {
-  color: white;
+  color: var(--font-color);
   font-size: 24px;
 }
 
 .newsletterPopup-content p {
-  color: white;
+  color: var(--font-color);
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -367,11 +383,11 @@ a {
 /* Main container css */
 
 .body-container {
-  background-color: #161b28;
+  background-color: var(--bg-color);
 }
 
 main {
-  background-color: #161b28;
+  background-color: var(--bg-color);
   padding: 20px;
 }
 
@@ -402,7 +418,7 @@ main {
 .trending-posts-container {
   width: 800px;
   height: max-content;
-  background-color: #161b28;
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -419,10 +435,10 @@ main {
   display: flex;
   justify-content: start;
   width: 235px;
-  background-color: #3a476a;
+  background-color: var(--bg-grey);
   border-radius: 10px;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: var(--font-color);
   font-size: 28px;
   padding: 5px 10px;
 }
@@ -439,7 +455,7 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  background-color: #3a476a;
+  background-color: var(--bg-grey);
   width: 265px;
   border-radius: 10px;
   padding: 0px 10px;
@@ -453,7 +469,7 @@ main {
 .posts-filter-button {
   height: 25px;
   width: 55px;
-  border: 2px solid white;
+  border: 2px solid var(--font-color);
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
@@ -461,28 +477,28 @@ main {
 }
 
 .posts-filter-button:hover {
-  background-color: #00cfc8;
-  color: #ffffff;
+  background-color: var(--border-hover-color);
+  color: var(--font-color);
 }
 
 .select-filters-one {
   width: 80px;
   height: 25px;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid var(--font-color);
 }
 
 .select-filters-two {
   width: 80px;
   border-radius: 5px;
   height: 25px;
-  border: 1px solid white;
+  border: 1px solid var(--font-color);
 }
 
 .main-posts-container {
   width: 800px;
   min-height: 600px;
-  background-color: #161b28;
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -500,10 +516,10 @@ main {
 .load-more-button {
   width: 200px;
   height: 40px;
-  border: 1px solid white;
+  border: 1px solid var(--font-color);
   border-radius: 10px;
-  background-color: #3a476a;
-  color: #ffffff;
+  background-color: var(--bg-grey);
+  color: var(--font-color);
   font-size: 22px;
   padding: 5px;
   cursor: pointer;
@@ -513,8 +529,8 @@ main {
 }
 
 .load-more-button:hover {
-  background-color: #00cfc8;
-  color: #ffffff;
+  background-color: var(--border-hover-color);
+  color: var(--font-color);
 }
 
 /* Css za main posts headrot */
@@ -530,9 +546,9 @@ main {
 
 .main-posts-heading {
   width: 235px;
-  background-color: #3a476a;
+  background-color: var(--bg-grey);
   border-radius: 10px;
-  color: #ffffff;
+  color: var(--font-color);
   font-size: 28px;
   padding: 5px 10px;
 }
@@ -552,7 +568,7 @@ main {
   width: 100%;
   height: 250px;
   padding: 15px 15px;
-  background-color: #283149;
+  background-color: var(--bg-light);
   display: grid;
   grid-template-columns: 30% 70%;
   border-radius: 10px;
@@ -560,7 +576,7 @@ main {
 
 .blog-post_title {
   font-size: 20px;
-  color: #ffffff;
+  color: var(--font-color);
   display: flex;
   justify-content: left;
   padding-left: 10px;
@@ -569,7 +585,7 @@ main {
 
 .blog-post_text {
   font-size: 15px;
-  color: #ffffff;
+  color: var(--font-color);
   padding: 10px;
   height: 120px;
 }
@@ -592,7 +608,7 @@ main {
   padding: 5px 5px 0px 5px;
   margin-left: 14px;
 
-  color: #ffffff;
+  color: var(--font-color);
 }
 
 .post-rating {
@@ -608,29 +624,29 @@ main {
   text-transform: inherit;
   font-weight: bold;
   font-size: 11px;
-  background-color: #3a476a;
-  color: #ffffff;
+  background-color: var(--bg-grey);
+  color: var(--font-color);
   border-radius: 10px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--font-color);
   cursor: pointer;
 }
 
 .blog-post_button:hover {
-  background-color: #00cfc8;
+  background-color: var(--border-hover-color);
 }
 
 /* Back to top button */
 
 .back-to-top-button {
   display: none;
-  background-color: #00cfc8;
+  background-color: var(--border-hover-color);
   position: fixed;
   bottom: 10px;
   right: 10px;
   z-index: 10000;
   width: 60px;
   height: 40px;
-  border: 1px solid #283149;
+  border: 1px solid var(--bg-light);
   border-radius: 5px;
   cursor: pointer;
   padding: 5px;
@@ -650,16 +666,16 @@ main {
 /* FOOTER*/
 
 #footer {
-  background-color: #283149;
-  border-color: #161b28;
+  background-color: var(--bg-light);
+  border-color: var(--bg-color);
   border-top-left-radius: 44%;
   border-top-style: groove;
   font-size: 16px;
-  color: #ffffff;
+  color: var(--font-color);
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-top: 2.5px solid #00cfc8;
+  border-top: 2.5px solid var(--border-hover-color);
 }
 li {
   list-style-type: none;
@@ -711,11 +727,11 @@ li {
   height: 20px;
 }
 a {
-  color: #ffffff;
+  color: var(--font-color);
   text-decoration: none;
 }
 a:hover {
-  color: #00cfc8;
+  color: var(--border-hover-color);
 }
 
 .infothree {
@@ -731,20 +747,20 @@ a:hover {
   opacity: 0.7;
 }
 .footer-botom {
-  background-color: #00cfc8;
+  background-color: var(--border-hover-color);
   min-height: 30px;
   margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: #283149;
+  color: var(--bg-light);
   text-align: center;
   font-size: 14px;
   opacity: 1;
 }
 .footer-botom a {
-  color: #161b28;
+  color: var(--bg-color);
 }
 
 .address {
@@ -757,7 +773,7 @@ a:hover {
 
 .social-links h2 {
   text-align: left;
-  color: #ffffff;
+  color: var(--font-color);
   margin-top: 0px;
   margin-bottom: 16px;
   opacity: 0.7;
@@ -791,7 +807,7 @@ a:hover {
 }
 
 .form-box h2 {
-  color: #ffffff;
+  color: var(--font-color);
   text-align: center;
   font-size: 32px;
 }
@@ -800,7 +816,7 @@ a:hover {
   position: relative;
   margin: 30px 0;
   width: 310px;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid var(--font-color);
 }
 
 .form-box .input-box input {
@@ -810,37 +826,37 @@ a:hover {
   border: none;
   outline: none;
   padding: 0 20px 0 5px;
-  color: #ffffff;
+  color: var(--font-color);
   font-size: 16px;
 }
 
 .bx-bxs-user {
   position: absolute;
-  color: #ffffff;
+  color: var(--font-color);
   top: 13px;
   right: 0;
 }
 
 .bx-bxs-envelope {
   position: absolute;
-  color: #ffffff;
+  color: var(--font-color);
   top: 13px;
   right: 0;
 }
 
 .bx-bxs-lock-alt {
   position: absolute;
-  color: #ffffff;
+  color: var(--font-color);
   top: 13px;
   right: 0;
 }
 
 input::placeholder {
-  color: #ffffff;
+  color: var(--font-color);
 }
 
 .register-button-submit {
-  color: #ffffff;
+  color: var(--font-color);
   background: #161b28;
   width: 100%;
   height: 50px;
@@ -866,11 +882,11 @@ input::placeholder {
 
 .group span {
   margin-right: 5px;
-  color: white;
+  color: var(--font-color);
 }
 
 .group span a {
-  color: #00cfc8;
+  color: var(--border-hover-color);
   position: relative;
   text-decoration: none;
   font-weight: 500px;
@@ -889,7 +905,7 @@ input::placeholder {
 
 .registered {
   width: 400px;
-  background-color: #ffffff;
+  background-color: var(--font-color);
   border-radius: 6px;
   position: absolute;
   top: 0;
@@ -900,7 +916,7 @@ input::placeholder {
   text-align: center;
   padding: 0 30px 30px;
   height: 330px;
-  color: #000;
+  color: var(--bg-color);
 }
 
 .registered ion-icon {
@@ -916,14 +932,14 @@ input::placeholder {
   border: none;
   outline: none;
   font-size: 18px;
-  color: #ffffff;
+  color: var(--font-color);
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .registered a {
-  color: #ffffff;
+  color: var(--font-color);
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 2px;
@@ -968,7 +984,7 @@ input::placeholder {
 }
 
 .contact {
-  background: #fff;
+  background: var(--font-color);
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
@@ -1004,7 +1020,7 @@ input::placeholder {
 }
 
 .contact h3 {
-  color: #283149;
+  color: var(--bg-light);
   font-size: 18px;
   font-weight: 400;
   padding: 0;
@@ -1033,7 +1049,7 @@ input::placeholder {
 }
 
 .inputBox span {
-  color: #283149;
+  color: var(--bg-light);
   margin-top: 10px;
   margin-bottom: 5px;
   font-weight: 400;
@@ -1068,13 +1084,13 @@ input::placeholder {
   transform: translateX(2px);
 }
 .send-button button:active {
-  background-color: #00cfc8;
+  background-color: var(--border-hover-color);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .inputBox button {
-  background: #283149;
-  color: #d8f3dc;
+  background: var(--bg-light);
+  color: var(--font-color);
   border: none;
   font-size: 1.1em;
   max-width: 120px;
@@ -1091,11 +1107,11 @@ input::placeholder {
 }
 
 .info {
-  background-color: #283149;
+  background-color: var(--bg-light);
 }
 
 .info h3 {
-  color: #d8f3dc;
+  color: var(--font-color);
   padding: 10px;
   font-size: 18px;
 }
@@ -1109,8 +1125,8 @@ input::placeholder {
 .info .infoBox div span {
   min-width: 25px;
   height: 25px;
-  color: #d8f3dc;
-  background: #283149;
+  color: var(--font-color);
+  background: var(--bg-light);
   display: flex;
   justify-content: start;
   align-items: center;
@@ -1119,12 +1135,12 @@ input::placeholder {
 }
 
 .info .infoBox div p {
-  color: #d8f3dc;
+  color: var(--font-color);
   font-size: 1.1em;
 }
 
 .info .infoBox div a {
-  color: #d8f3dc;
+  color: var(--font-color);
   text-decoration: none;
   font-size: 1.1em;
 }
@@ -1140,13 +1156,13 @@ input::placeholder {
 }
 
 .sci li a {
-  color: #d8f3dc;
+  color: var(--font-color);
   font-size: 2em;
   color: #ccc;
 }
 
 .sci li a:hover {
-  color: #d8f3dc;
+  color: var(--font-color);
 }
 
 .map {
@@ -1174,7 +1190,7 @@ input::placeholder {
 .post-page-header-container {
   padding: 20px 200px;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--font-color);
 }
 
 .post-page-image-div-container {
@@ -1194,7 +1210,7 @@ input::placeholder {
 }
 
 .post-page-text-div-container p {
-  color: #ffffff;
+  color: var(--font-color);
 }
 
 .btn {
@@ -1208,9 +1224,9 @@ input::placeholder {
   height: 40px;
   width: 70px;
   border-radius: 10px;
-  border: 1px solid #00cfc8;
-  background: #3a476a;
-  color: #00cfc8;
+  border: 1px solid var(--border-hover-color);
+  background: var(--bg-grey);
+  color: var(--border-hover-color);
   cursor: pointer;
 }
 
@@ -1222,12 +1238,12 @@ input::placeholder {
 }
 
 .container_comment {
-  background: #3a476a;
+  background: var(--bg-grey);
   border-radius: 10px;
   padding: 40px;
   font-family: monospace;
   width: 100%;
-  color: #ffffff;
+  color: var(--font-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -1262,15 +1278,15 @@ input::placeholder {
 
 .user {
   margin: 5px 0;
-  background: #ffffff;
+  background: var(--font-color);
   padding: 10px;
   border-radius: 5px;
 }
 
 .commentinput input {
   padding: 10px;
-  border-bottom: 2px solid #00cfc8;
-  background: #ffffff;
+  border-bottom: 2px solid var(--border-hover-color);
+  background: var(--font-color);
   margin-bottom: 10px;
   width: 95%;
   border-radius: 5px;
@@ -1280,19 +1296,20 @@ input::placeholder {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-right: 65px;
 }
 
 .buttons button {
   padding: 5px 10px;
-  background: #3a476a;
-  color: #00cfc8;
+  background: var(--bg-grey);
+  color: var(--border-hover-color);
   border-radius: 5px;
-  border: 1px solid #00cfc8;
+  border: 1px solid var(--border-hover-color);
   cursor: pointer;
 }
 
 .buttons button.abled {
-  background: #00cfc8;
+  background: var(--border-hover-color);
   color: #fff;
 }
 
@@ -1300,12 +1317,12 @@ input::placeholder {
   margin: 20px 0;
   font-size: 1.3em;
   font-family: Arial, sans-serif;
-  color: #ffffff;
+  color: var(--font-color);
 }
 
 .policy a {
   text-decoration: none;
-  color: #00cfc8;
+  color: var(--border-hover-color);
 }
 
 .parents {
@@ -1360,7 +1377,7 @@ input::placeholder {
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  color: white;
+  color: var(--font-color);
 }
 
 .aboutUs-container h2 {
@@ -1375,7 +1392,7 @@ input::placeholder {
 }
 .aboutUs-container p {
   font-size: 15px;
-  color: white;
+  color: var(--font-color);
 }
 .aboutUs-container-one {
   display: grid;

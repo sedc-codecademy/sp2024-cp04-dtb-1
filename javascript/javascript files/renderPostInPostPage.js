@@ -120,7 +120,7 @@ export const renderPostInPostPage = (post) => {
                     <div class="commentinput">
                         <input type="text" placeholder="Enter comment" class="usercomment">
                         <div class="buttons">
-                            <button type="submit" id="publish">PUBLISH</button>
+                            <button id="publish">PUBLISH</button>
                         </div>
                     </div>
                     <p class="policy">This site is procted by reCAPTCHA and the Google <a href="">privacy policy</a> and
@@ -203,68 +203,70 @@ export const renderPostInPostPage = (post) => {
       </section>
     </footer>`;
 
-  // let ChangeIcon = function (icon) {
-  //   icon.classList.toggle("fa-star-half-stroke");
-  // };
-
-  // const USERID = {
-  //   name: null,
-  //   identity: null,
-  //   image: null,
-  //   message: null,
-  //   date: null,
-  // };
-
-  // const userComment = document.querySelector(".usercomment");
-  // const publishBtn = document.querySelector("#publish");
-  // const comments = document.querySelector(".comments");
-  // const userName = document.querySelector(".user");
-  // const notify = document.querySelector(".notifyinput");
-
-  // userComment.addEventListener("input", () => {
-  //   if (!userComment.value) {
-  //     publishBtn.setAttribute("disabled", "disabled");
-  //     publishBtn.classList.remove("abled");
-  //   } else {
-  //     publishBtn.removeAttribute("disabled");
-  //     publishBtn.classList.add("abled");
-  //   }
-  // });
-
-  // function addPost() {
-  //   if (!userComment.value) return;
-  //   USERID.name = userName.value;
-  //   if (USERID.name === "Anonymous") {
-  //     USERID.identity = false;
-  //     USERID.image = "photo/profile.jpg";
-  //   } else {
-  //     USERID.identity = true;
-  //     USERID.image = "photo/user.jpg";
-  //   }
-
-  //   USERID.message = userComment.value;
-  //   USERID.date = new Date().toLocaleString();
-  //   let published = `<div class="parents">
-  //                       <img src="${USERID.image}">
-  //                       <div>
-  //                           <h1>${USERID.name}</h1>
-  //                           <p>${USERID.message}</p>
-  //                           <span class="date">${USERID.date}</span>
-  //                       </div>
-  //                   </div>`;
-
-  //   comments.innerHTML += published;
-  //   userComment.value = "";
-  //   publishBtn.classList.remove("abled");
-
-  //   let commentsNum = document.querySelectorAll(".parents").length;
-  //   document.getElementById("comment").textContent = commentsNum;
-  // }
-
-  // publishBtn.addEventListener("click", addPost);
+  let ChangeIcon = function (icon) {
+    icon.classList.toggle("fa-star-half-stroke");
+  };
 
   let indexHTML = document.querySelector(".body-container");
   renderIndexHTML(indexHTML, postPageHTML);
   navbarFunction();
   history.pushState({}, "", "/post");
+
+  const USERID = {
+    name: null,
+    identity: null,
+    image: null,
+    message: null,
+    date: null,
+  };
+
+  const userComment = document.querySelector(".usercomment");
+  const publishBtn = document.querySelector("#publish");
+  const comments = document.querySelector(".comments");
+  const userName = document.querySelector(".user");
+  const notify = document.querySelector(".notifyinput");
+
+  userComment.addEventListener("input", () => {
+    if (!userComment.value) {
+      publishBtn.setAttribute("disabled", "disabled");
+      publishBtn.classList.remove("abled");
+    } else {
+      publishBtn.removeAttribute("disabled");
+      publishBtn.classList.add("abled");
+    }
+  });
+
+  function addPost() {
+    if (!userComment.value) return;
+    USERID.name = userName.value;
+    if (USERID.name === "Anonymous") {
+      USERID.identity = false;
+      USERID.image = "photo/profile.jpg";
+    } else {
+      USERID.identity = true;
+      USERID.image = "photo/user.jpg";
+    }
+
+    USERID.message = userComment.value;
+    USERID.date = new Date().toLocaleString();
+    let published = `<div class="parents">
+                        <img src="${USERID.image}">
+                        <div>
+                            <h1>${USERID.name}</h1>
+                            <p>${USERID.message}</p>
+                            <span class="date">${USERID.date}</span>
+                        </div>
+                    </div>`;
+
+    comments.innerHTML += published;
+    userComment.value = "";
+    publishBtn.classList.remove("abled");
+
+    let commentsNum = document.querySelectorAll(".parents").length;
+    document.getElementById("comment").textContent = commentsNum;
+  }
+
+  publishBtn.addEventListener("click", () => {
+    addPost();
+  });
 };
