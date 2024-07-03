@@ -23,8 +23,8 @@ Celosno svetlo siva nijansa - #03fff6
 .lightMode {
   --bg-color: #ffffff;
   --bg-light: #283149;
-  --bg-grey: #3a476a;
-  --font-color: #ffffff;
+  --bg-grey: #c6cbda;
+  --font-color: #161b28;
   --border-hover-color: #00cfc8;
 }
 
@@ -70,7 +70,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: var(--bg-light);
+  background-color: var(--bg-grey);
   height: 90px;
   border-bottom: 1px solid var(--border-hover-color);
 }
@@ -206,7 +206,7 @@ a {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  color: var(--font-color);
+  color: var(--bg-color);
 }
 
 .search-input {
@@ -214,16 +214,16 @@ a {
   height: 40px;
   transition: width 0.3s ease-in-out;
   padding: 10px 20px 10px 40px;
-  border: none;
+  border: 2px solid var(--bg-light);
   border-radius: 15px;
-  background-color: #212a31;
-  color: var(--font-color);
+  background-color: var(--bg-grey);
+  color: var(--bg-color);
 }
 
 .search-input:focus {
   width: 400px;
   outline: none;
-  border: none;
+  border: 2px solid var(--bg-light);
 }
 
 @media (max-width: 768px) {
@@ -258,7 +258,7 @@ a {
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background-color: var(--bg-light);
+  background-color: var(--bg-grey);
   color: var(--font-color);
   border-radius: 5px;
 }
@@ -328,7 +328,7 @@ a {
   right: 10px;
   cursor: pointer;
   font-size: 20px;
-  color: var(--font-color);
+  color: var(--bg-color);
 }
 
 .close-button:hover {
@@ -342,7 +342,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,7 +568,7 @@ main {
   width: 100%;
   height: 250px;
   padding: 15px 15px;
-  background-color: var(--bg-light);
+  background-color: var(--bg-grey);
   display: grid;
   grid-template-columns: 30% 70%;
   border-radius: 10px;
@@ -666,7 +666,7 @@ main {
 /* FOOTER*/
 
 #footer {
-  background-color: var(--bg-light);
+  background-color: var(--bg-grey);
   border-color: var(--bg-color);
   border-top-left-radius: 44%;
   border-top-style: groove;
@@ -856,7 +856,7 @@ input::placeholder {
 }
 
 .register-button-submit {
-  color: var(--font-color);
+  color: var(--border-hover-color);
   background: #161b28;
   width: 100%;
   height: 50px;
@@ -984,7 +984,7 @@ input::placeholder {
 }
 
 .contact {
-  background: var(--font-color);
+  background: var(--bg-grey);
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
@@ -1020,7 +1020,7 @@ input::placeholder {
 }
 
 .contact h3 {
-  color: var(--bg-light);
+  color: var(--bg-grey);
   font-size: 18px;
   font-weight: 400;
   padding: 0;
@@ -1076,6 +1076,7 @@ input::placeholder {
 
 .send-button {
   height: 50px;
+  background-color: var(--bg-grey);
 }
 .send-button button:hover {
   background-color: #2d6a4f;
@@ -1090,7 +1091,7 @@ input::placeholder {
 }
 .inputBox button {
   background: var(--bg-light);
-  color: var(--font-color);
+  color: var(--bg-color);
   border: none;
   font-size: 1.1em;
   max-width: 120px;
@@ -1107,7 +1108,7 @@ input::placeholder {
 }
 
 .info {
-  background-color: var(--bg-light);
+  background-color: var(--bg-grey);
 }
 
 .info h3 {
@@ -1126,7 +1127,7 @@ input::placeholder {
   min-width: 25px;
   height: 25px;
   color: var(--font-color);
-  background: var(--bg-light);
+  background: var(--bg-grey);
   display: flex;
   justify-content: start;
   align-items: center;
@@ -1225,7 +1226,7 @@ input::placeholder {
   width: 70px;
   border-radius: 10px;
   border: 1px solid var(--border-hover-color);
-  background: var(--bg-grey);
+  background: var(--bg-color);
   color: var(--border-hover-color);
   cursor: pointer;
 }
@@ -1278,7 +1279,7 @@ input::placeholder {
 
 .user {
   margin: 5px 0;
-  background: var(--font-color);
+  background: var(--bg-color);
   padding: 10px;
   border-radius: 5px;
 }
@@ -1286,7 +1287,7 @@ input::placeholder {
 .commentinput input {
   padding: 10px;
   border-bottom: 2px solid var(--border-hover-color);
-  background: var(--font-color);
+  background: var(--bg-color);
   margin-bottom: 10px;
   width: 95%;
   border-radius: 5px;
@@ -1301,7 +1302,7 @@ input::placeholder {
 
 .buttons button {
   padding: 5px 10px;
-  background: var(--bg-grey);
+  background: var(--bg-color);
   color: var(--border-hover-color);
   border-radius: 5px;
   border: 1px solid var(--border-hover-color);
