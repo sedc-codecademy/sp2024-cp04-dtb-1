@@ -3,7 +3,6 @@ import { navbarFunction } from "./navbar.js";
 
 export const renderPostInPostPage = (post) => {
   console.log(post);
-  navbarFunction();
 
   let postPageHTML = `
   <header class="header">
@@ -24,13 +23,13 @@ export const renderPostInPostPage = (post) => {
        <!-- Desktop Nav menu -->
        <ul class="nav-menu">
          <li class="nav-item">
-           <a href="/" class="post-button-nav">Post</a>
+           <a class="post-button-nav">Post</a>
          </li>
          <li class="nav-item">
            <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
          </li>
          <li class="nav-item">
-           <a href="/about" class="nav-link">About Us</a>
+           <a class="about-us-button">About Us</a>
          </li>
          <li class="nav-item">
            <a class="nav-link open-button" onclick="openForm()"
@@ -38,7 +37,7 @@ export const renderPostInPostPage = (post) => {
            >
          </li>
          <li class="nav-item">
-           <a href="/contact" class="contact-button">Contact</a>
+           <a class="contact-button">Contact</a>
          </li>
        </ul>
 
@@ -266,5 +265,6 @@ export const renderPostInPostPage = (post) => {
 
   let indexHTML = document.querySelector(".body-container");
   renderIndexHTML(indexHTML, postPageHTML);
+  navbarFunction();
   history.pushState({}, "", "/post");
 };

@@ -8,7 +8,8 @@ import {
   scrollFunction,
   topFunction,
 } from "./javascript files/backToTopButton.js";
-import { renderPostInPostPage } from "./javascript files/renderPostInPostPage.js";
+import { renderPostList } from "./javascript files/renderPostList.js";
+import { renderTrendingPostList } from "./javascript files/renderTrendingPostList.js";
 
 // Data url
 const dataURL = "/javascript/data/posts.json";
@@ -50,8 +51,8 @@ export const homePageGlobalFunction = () => {
       const data = await response.json();
 
       console.log(data);
-      renderTrendingPosts(data);
-      renderPosts(data);
+      renderTrendingPostList(data, trendingPostsContainer);
+      renderPostList(data, postsContainer);
 
       searchInput.addEventListener("input", () => {
         if (searchInput.value.length > 0) {
@@ -80,90 +81,6 @@ export const homePageGlobalFunction = () => {
     } catch (error) {
       console.log(error);
     }
-  };
-
-  // Render function for newest posts
-  const renderPosts = (posts) => {
-    let postHTML = "";
-
-    posts
-      .sort((a, b) => new Date(b.date) - new Date(a.date))
-      .map((post) => {
-        postHTML += `<div class="post-container">
-              <div class="blog-post">
-                <div class="blog-post_img">
-                  <img
-                    src=${post.image}
-                    alt=""
-                    height="45px"
-                  />
-                </div>
-                <div class="blog-post_info">
-                  <h1 class="blog-post_title">${post.title}</h1>
-                  <p class="blog-post_text">
-                  ${post.description}
-                  </p>
-                  <div class="blog-post_button_and_date">
-                    <div>
-                      <button class="blog-post_button"}>Read More</button>
-                    </div>
-                    <div class="blog-post_date">
-                      <div>
-                        <small>${post.author}</small>
-                        <small>${post.date}</small>
-                      </div>
-                      <small class="post-rating">${post.rating}⭐</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>`;
-
-        postsContainer.innerHTML = postHTML;
-      });
-  };
-
-  // Render trending posts functionality
-
-  const renderTrendingPosts = (posts) => {
-    let trendingPostsHTML = "";
-
-    posts
-      .filter((post) => post.rating >= 5)
-      .slice(0, 2)
-      .map((filterdPost) => {
-        trendingPostsHTML += `<div class="post-container">
-              <div class="blog-post">
-                <div class="blog-post_img">
-                  <img
-                    src=${filterdPost.image}
-                    alt=""
-                    height="45px"
-                  />
-                </div>
-                <div class="blog-post_info">
-                  <h1 class="blog-post_title">${filterdPost.title}</h1>
-                  <p class="blog-post_text">
-                  ${filterdPost.description}
-                  </p>
-                  <div class="blog-post_button_and_date">
-                    <div>
-                      <button class="blog-post_button">Read More</button>
-                    </div>
-                    <div class="blog-post_date">
-                      <div>
-                        <small>${filterdPost.author}</small>
-                        <small>${filterdPost.date}</small>
-                      </div>
-                      <small class="post-rating">${filterdPost.rating}⭐</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>`;
-      });
-
-    trendingPostsContainer.innerHTML = trendingPostsHTML;
   };
 
   const filterPosts = (selectOneValue, selectTwoValue, postsData) => {
