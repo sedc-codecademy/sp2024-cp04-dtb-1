@@ -1,5 +1,6 @@
 import { renderIndexHTML } from "./globalRenderHTML.js";
 import { navbarFunction } from "./navbar.js";
+import { topFunction, scrollFunction } from "./backToTopButton.js";
 
 export const renderPostInPostPage = (post) => {
   console.log(post);
@@ -23,7 +24,7 @@ export const renderPostInPostPage = (post) => {
        <!-- Desktop Nav menu -->
        <ul class="nav-menu">
          <li class="nav-item">
-           <a class="post-button-nav">Post</a>
+           <a class="post-button-nav">Posts</a>
          </li>
          <li class="nav-item">
            <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
@@ -39,6 +40,7 @@ export const renderPostInPostPage = (post) => {
          <li class="nav-item">
            <a class="contact-button">Contact</a>
          </li>
+        <li class="nav-item" id="toggle">🌞</li>
        </ul>
 
        <!-- Hamburger nav menu -->
@@ -113,7 +115,7 @@ export const renderPostInPostPage = (post) => {
             </div>
             <div class="comments"></div>
             <div class="commentbox">
-                <img src="photo/user.jpg" alt="">
+                <img src="../../assets/comments-photo/user.jpg" alt="">
                 <div class="content">
                     <h2>Comment as: </h2>
                     <input type="text" placeholder="Enter your name" class="user">
@@ -130,6 +132,7 @@ export const renderPostInPostPage = (post) => {
             </div>
         </div>
         </div>
+        <button class="back-to-top-button"><i class="fa-solid fa-arrow-up"></i></button>
         </main>
         <footer id="footer">
       <div class="divflex">
@@ -175,7 +178,7 @@ export const renderPostInPostPage = (post) => {
           <section class="infoone">
             <menu>
               <h2>Support</h2>
-              <li><a href=""> Contact</a></li>
+              <li><a class="footer-contact-link"> Contact</a></li>
               <li><a href=""> Help Center</a></li>
               <li><a href=""> Site Map</a></li>
               <li><a href=""> Professional Services</a></li>
@@ -184,7 +187,7 @@ export const renderPostInPostPage = (post) => {
           <section class="infotwoo">
             <menu>
               <h2>Company</h2>
-              <li><a href=""> About Us</a></li>
+              <li><a class="footer-about-link"> About Us</a></li>
               <li><a href=""> Careers</a></li>
               <li><a href=""> Newsroom</a></li>
               <li><a href=""> Resources</a></li>
@@ -203,13 +206,22 @@ export const renderPostInPostPage = (post) => {
       </section>
     </footer>`;
 
-  let ChangeIcon = function (icon) {
-    icon.classList.toggle("fa-star-half-stroke");
-  };
-
   let indexHTML = document.querySelector(".body-container");
   renderIndexHTML(indexHTML, postPageHTML);
   navbarFunction();
+
+  // Back to  top
+
+  let backToTopBtn = document.querySelector(".back-to-top-button");
+
+  window.onscroll = () => {
+    scrollFunction();
+  };
+
+  backToTopBtn.addEventListener("click", () => {
+    topFunction();
+  });
+
   history.pushState({}, "", "/post");
 
   const USERID = {
@@ -241,10 +253,10 @@ export const renderPostInPostPage = (post) => {
     USERID.name = userName.value;
     if (USERID.name === "Anonymous") {
       USERID.identity = false;
-      USERID.image = "photo/profile.jpg";
+      USERID.image = "../../assets/comments-photo/profile.webp";
     } else {
       USERID.identity = true;
-      USERID.image = "photo/user.jpg";
+      USERID.image = "../../assets/comments-photo/user.jpg";
     }
 
     USERID.message = userComment.value;
@@ -256,6 +268,7 @@ export const renderPostInPostPage = (post) => {
                             <p>${USERID.message}</p>
                             <span class="date">${USERID.date}</span>
                         </div>
+                        
                     </div>`;
 
     comments.innerHTML += published;

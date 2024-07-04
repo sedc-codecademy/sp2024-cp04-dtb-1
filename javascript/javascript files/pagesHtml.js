@@ -17,7 +17,7 @@ export let homePageHTML = `
         <!-- Desktop Nav menu -->
         <ul class="nav-menu">
           <li class="nav-item">
-            <a class="post-button-nav" >Post</a>
+            <a class="post-button-nav" >Posts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
@@ -206,7 +206,7 @@ export let homePageHTML = `
           <section class="infoone">
             <menu>
               <h2>Support</h2>
-              <li><a> Contact</a></li>
+              <li><a class="footer-contact-link"> Contact</a></li>
               <li><a href=""> Help Center</a></li>
               <li><a href=""> Site Map</a></li>
               <li><a href=""> Professional Services</a></li>
@@ -215,7 +215,7 @@ export let homePageHTML = `
           <section class="infotwoo">
             <menu>
               <h2>Company</h2>
-              <li><a href=""> About Us</a></li>
+              <li><a class="footer-about-link"> About Us</a></li>
               <li><a href=""> Careers</a></li>
               <li><a href=""> Newsroom</a></li>
               <li><a href=""> Resources</a></li>
@@ -311,7 +311,7 @@ export let contactPageHTML = `<header class="header">
         <!-- Desktop Nav menu -->
         <ul class="nav-menu">
           <li class="nav-item">
-            <a class="post-button-nav">Post</a>
+            <a class="post-button-nav">Posts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
@@ -487,7 +487,7 @@ export let contactPageHTML = `<header class="header">
           <section class="infoone">
             <menu>
               <h2>Support</h2>
-              <li><a>Contact</a></li>
+              <li><a class="footer-contact-link">Contact</a></li>
               <li><a href=""> Help Center</a></li>
               <li><a href=""> Site Map</a></li>
               <li><a href=""> Professional Services</a></li>
@@ -496,7 +496,7 @@ export let contactPageHTML = `<header class="header">
           <section class="infotwoo">
             <menu>
               <h2>Company</h2>
-              <li><a href=""> About Us</a></li>
+              <li><a class="footer-about-link"> About Us</a></li>
               <li><a href=""> Careers</a></li>
               <li><a href=""> Newsroom</a></li>
               <li><a href=""> Resources</a></li>
@@ -534,7 +534,7 @@ export let aboutUsPageHTML = `
         <!-- Desktop Nav menu -->
         <ul class="nav-menu">
           <li class="nav-item">
-            <a class="post-button-nav">Post</a>
+            <a class="post-button-nav">Posts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="NewsletterPopUp">Newsletter</a>
@@ -619,10 +619,10 @@ export let aboutUsPageHTML = `
             </p>
           </div>
         </div>
-        <div>
+        <div class="about-image-container-one">
           <img
             class="img-about"
-            src="./assets/img for about us/1000_F_282753146_V6ZHcruFiIauT4ecZyf9a2J066LD2K9N.jpg"
+            src="./assets/img for about us/about-us-image.jpg"
             width="560"
           />
         </div>
@@ -695,7 +695,7 @@ export let aboutUsPageHTML = `
           <section class="infoone">
             <menu>
               <h2>Support</h2>
-              <li><a>Contact</a></li>
+              <li><a class="footer-contact-link">Contact</a></li>
               <li><a href=""> Help Center</a></li>
               <li><a href=""> Site Map</a></li>
               <li><a href=""> Professional Services</a></li>
@@ -704,7 +704,7 @@ export let aboutUsPageHTML = `
           <section class="infotwoo">
             <menu>
               <h2>Company</h2>
-              <li><a href=""> About Us</a></li>
+              <li><a class="footer-about-link"> About Us</a></li>
               <li><a href=""> Careers</a></li>
               <li><a href=""> Newsroom</a></li>
               <li><a href=""> Resources</a></li>

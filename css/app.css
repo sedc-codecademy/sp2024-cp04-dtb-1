@@ -1,15 +1,3 @@
-/* 
-Paleta na boi:
-
-Najtemna nijansa(za main container pozadina i container na karticki) - #161b28
-Potemna nijansa na sivo(za header i footer) - #283149
-Posvetlo siva nijansa(za pozadina na posts containers) - #3a476a
-Zeleno-sina nijansa(za hover na header i footer elementi) - #00CFC8
-Celosno bela nijansa(za tekstovi, borderi so 1px i slicno) - #ffffff
-Celosno svetlo siva nijansa - #03fff6
-
-*/
-
 /* Body css, deafult css */
 
 :root {
@@ -726,6 +714,15 @@ li {
   width: 20px;
   height: 20px;
 }
+
+.footer-contact-link {
+  cursor: pointer;
+}
+
+.footer-about-link {
+  cursor: pointer;
+}
+
 a {
   color: var(--font-color);
   text-decoration: none;
@@ -1020,7 +1017,7 @@ input::placeholder {
 }
 
 .contact h3 {
-  color: var(--bg-grey);
+  color: var(--font-color);
   font-size: 18px;
   font-weight: 400;
   padding: 0;
@@ -1091,7 +1088,7 @@ input::placeholder {
 }
 .inputBox button {
   background: var(--bg-light);
-  color: var(--bg-color);
+  color: var(--font-color);
   border: none;
   font-size: 1.1em;
   max-width: 120px;
@@ -1373,22 +1370,27 @@ input::placeholder {
 /* About us */
 .aboutUs-container {
   display: grid;
+  padding: 50px;
   min-height: 100vh;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
+
   color: var(--font-color);
 }
 
+.aboutUs-header {
+  height: 80px;
+}
+
 .aboutUs-container h2 {
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 32px;
+  font-weight: 700;
   letter-spacing: 2px;
 }
 .aboutUs-container h3 {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 .aboutUs-container p {
@@ -1397,6 +1399,7 @@ input::placeholder {
 }
 .aboutUs-container-one {
   display: grid;
+  padding: 0px 50px;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
@@ -1405,13 +1408,15 @@ input::placeholder {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  padding: 0px 50px;
+  gap: 20px;
 }
 .aboutUs-container img {
   height: 280px;
 }
 .aboutUs-one {
   display: grid;
-  gap: 20px;
+  grid-template-rows: 25% 1fr 1fr;
 }
 .text-one {
   display: grid;
@@ -1421,17 +1426,13 @@ input::placeholder {
   display: grid;
   gap: 10px;
 }
+
+.about-image-container-one {
+  padding-top: 60px;
+}
 .img-about {
-  padding-top: 20px;
-  border-top-left-radius: 28%;
-  border-bottom-left-radius: 55%;
-  border-top-right-radius: 40%;
-  border-bottom-right-radius: 16%;
+  border-radius: 20px;
 }
 .img-about2 {
-  padding-top: 20px;
-  border-top-left-radius: 38%;
-  border-bottom-left-radius: 55%;
-  border-top-right-radius: 25%;
-  border-bottom-right-radius: 16%;
+  border-radius: 20px;
 }
