@@ -1446,7 +1446,7 @@ input::placeholder {
   }
 
   .navbar {
-    width: 440px;
+    width: 450px;
   }
 
   .search-form {
@@ -1457,7 +1457,7 @@ input::placeholder {
     height: 40px;
   }
   .nav-menu {
-    width: 440px;
+    width: 450px;
   }
 
   /* Reklami*/
@@ -1483,7 +1483,7 @@ input::placeholder {
   }
 
   .blog-post {
-    width: 420px;
+    width: 415px;
     height: 530px;
     display: flex;
     align-items: center;
@@ -1559,7 +1559,7 @@ input::placeholder {
 
   #footer {
     font-size: 10px;
-    width: 440px;
+    width: 450px;
   }
 
   .logo {
