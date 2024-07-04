@@ -1435,3 +1435,63 @@ input::placeholder {
   border-top-right-radius: 25%;
   border-bottom-right-radius: 16%;
 }
+
+/*Response for Iphone SE */
+@media only screen and (max-width: 320px) {
+  /*Heder*/
+  .nav-logo img {
+    height: 40px;
+    margin: 0;
+  }
+
+  .navbar {
+    width: 455px;
+  }
+
+  .search-form {
+    margin-right: 10px;
+  }
+  .search-input {
+    width: 145px;
+    height: 40px;
+  }
+  .nav-menu {
+    width: 455px;
+  }
+
+  /* Reklami*/
+  .side-container {
+    display: none;
+  }
+
+  /* Karticki */
+
+  .main-container {
+    display: grid;
+    place-items: start;
+    gap: 10px;
+  }
+
+  .trending-heading {
+    width: 180px;
+    font-size: 20px;
+  }
+
+  .post-container {
+    height: 520px;
+  }
+
+  .blog-post {
+    width: 400px;
+    height: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .blog-post_title {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
