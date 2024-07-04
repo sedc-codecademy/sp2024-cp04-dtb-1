@@ -33,7 +33,9 @@ export let homePageHTML = `
           <li class="nav-item">
             <a class="contact-button">Contact</a>
           </li>
-          <li class="nav-item" id="toggle">🌞</li>
+          <li class="nav-item" id="toggle">
+          <i class="fa-regular fa-sun"></i>
+          </li>
         </ul>
 
         <!-- Hamburger nav menu -->

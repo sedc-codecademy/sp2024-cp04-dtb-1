@@ -149,7 +149,9 @@ export const navbarFunction = () => {
 
   function modeSwitch() {
     isLight = !isLight;
-    isLight ? (toggle.innerText = "🌞") : (toggle.innerText = "🌚");
+    isLight
+      ? (toggle.innerHTML = `<i class="fa-regular fa-sun"></i>`)
+      : (toggle.innerHTML = `<i class="fa-solid fa-sun"></i>`);
     var rootElement = document.body;
     rootElement.classList.toggle("lightMode");
   }
