@@ -211,6 +211,7 @@ a {
 .search-input:focus {
   width: 400px;
   outline: none;
+  color: var(--font-color);
   border: 2px solid var(--bg-light);
 }
 
