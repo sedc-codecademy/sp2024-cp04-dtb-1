@@ -1446,7 +1446,7 @@ input::placeholder {
   }
 
   .navbar {
-    width: 415px;
+    width: 460px;
   }
 
   .search-form {
@@ -1483,7 +1483,7 @@ input::placeholder {
   }
 
   .blog-post {
-    width: 380px;
+    width: 420px;
     height: 530px;
     display: flex;
     align-items: center;
@@ -1559,7 +1559,7 @@ input::placeholder {
 
   #footer {
     font-size: 10px;
-    width: 415px;
+    width: 460px;
   }
 
   .logo {
