@@ -1402,6 +1402,10 @@ input::placeholder {
   padding: 0px 50px;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  gap: 15px;
+}
+.about-image-container-one img {
+  margin-top: 65px;
 }
 .aboutUs-container-two {
   display: grid;
