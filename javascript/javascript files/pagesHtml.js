@@ -2,7 +2,7 @@ export let homePageHTML = `
 <header class="header">
       <nav class="navbar">
         <!-- Logo -->
-        <a href="/" class="nav-logo"
+        <a class="nav-logo"
           ><img class="nav-logo" src="/assets/logos/logo.png" alt="Logo "
         /></a>
 
@@ -183,20 +183,20 @@ export let homePageHTML = `
 
             <span class="social-links">
               <h2>Follow Us</h2>
-              <a href="#"
+              <a
                 ><img
                   class="facebook"
                   src="../assets/image for social media/facebook_145802.png"
                   alt="Facebook"
               /></a>
-              <a href="#"
+              <a
                 ><img
                   class="instagram"
                   src="../assets/image for social media/instagram_2111463.png"
                   alt="Instagram"
                 />
               </a>
-              <a href="#"
+              <a
                 ><img
                   class="linkedin"
                   src="../assets/image for social media/linkedin_145807.png"
@@ -209,27 +209,27 @@ export let homePageHTML = `
             <menu>
               <h2>Support</h2>
               <li><a class="footer-contact-link"> Contact</a></li>
-              <li><a href=""> Help Center</a></li>
-              <li><a href=""> Site Map</a></li>
-              <li><a href=""> Professional Services</a></li>
+              <li><a> Help Center</a></li>
+              <li><a> Site Map</a></li>
+              <li><a> Professional Services</a></li>
             </menu>
           </section>
           <section class="infotwoo">
             <menu>
               <h2>Company</h2>
               <li><a class="footer-about-link"> About Us</a></li>
-              <li><a href=""> Careers</a></li>
-              <li><a href=""> Newsroom</a></li>
-              <li><a href=""> Resources</a></li>
+              <li><a> Careers</a></li>
+              <li><a> Newsroom</a></li>
+              <li><a> Resources</a></li>
             </menu>
           </section>
         </section>
       </div>
       <section class="infothree">
-        <li><a href=""> Terms of use</a></li>
-        <li><a href=""> Privacy Notice</a></li>
-        <li><a href=""> Cookie Policy</a></li>
-        <li><a href=""> FAQ</a></li>
+        <li><a> Terms of use</a></li>
+        <li><a> Privacy Notice</a></li>
+        <li><a> Cookie Policy</a></li>
+        <li><a> FAQ</a></li>
       </section>
       <section class="footer-botom">
         Copyright &copy; 2024 - All Rights Reserved - TECH Sphere
@@ -291,14 +291,14 @@ export let registerPageHTML = `<div class="container">
   <ion-icon name="checkmark-circle-outline"></ion-icon>
   <h2>Congratulations</h2>
   <p>You were registered successfuly!</p>
-  <a href="#"><button>OK</button></a>
+  <a><button>OK</button></a>
 </div>
 </div>`;
 
 export let contactPageHTML = `<header class="header">
       <nav class="navbar">
         <!-- Logo -->
-        <a href="/" class="nav-logo"
+        <a class="nav-logo"
           ><img class="nav-logo" src="/assets/logos/logo.png" alt="Logo "
         /></a>
 
@@ -385,22 +385,22 @@ export let contactPageHTML = `<header class="header">
                     <div class="row50">
                         <div class="inputBox">
                             <span>First Name</span>
-                            <input type="text" placeholder="Petar">
+                            <input type="text" placeholder="Enter first name">
                         </div>
                         <div class="inputBox">
                             <span>Last Name</span>
-                            <input type="text" placeholder="Petreski">
+                            <input type="text" placeholder="Enter last name">
                         </div>
                     </div>
 
                     <div class="row50">
                     <div class="inputBox">
                         <span>Email</span>
-                        <input type="text" placeholder="petarpetreski@gmail.com">
+                        <input type="text" placeholder="Enter email">
                     </div>
                     <div class="inputBox">
                         <span>Mobile</span>
-                        <input type="text" placeholder="+389 72 123 456">
+                        <input type="text" placeholder="Enter phone number">
                     </div>
                 </div>
                 <div class="row100">
@@ -464,20 +464,20 @@ export let contactPageHTML = `<header class="header">
 
             <span class="social-links">
               <h2>Follow Us</h2>
-              <a href="#"
+              <a
                 ><img
                   class="facebook"
                   src="../assets/image for social media/facebook_145802.png"
                   alt="Facebook"
               /></a>
-              <a href="#"
+              <a
                 ><img
                   class="instagram"
                   src="../assets/image for social media/instagram_2111463.png"
                   alt="Instagram"
                 />
               </a>
-              <a href="#"
+              <a
                 ><img
                   class="linkedin"
                   src="../assets/image for social media/linkedin_145807.png"
@@ -490,27 +490,27 @@ export let contactPageHTML = `<header class="header">
             <menu>
               <h2>Support</h2>
               <li><a class="footer-contact-link">Contact</a></li>
-              <li><a href=""> Help Center</a></li>
-              <li><a href=""> Site Map</a></li>
-              <li><a href=""> Professional Services</a></li>
+              <li><a> Help Center</a></li>
+              <li><a> Site Map</a></li>
+              <li><a> Professional Services</a></li>
             </menu>
           </section>
           <section class="infotwoo">
             <menu>
               <h2>Company</h2>
               <li><a class="footer-about-link"> About Us</a></li>
-              <li><a href=""> Careers</a></li>
-              <li><a href=""> Newsroom</a></li>
-              <li><a href=""> Resources</a></li>
+              <li><a> Careers</a></li>
+              <li><a> Newsroom</a></li>
+              <li><a> Resources</a></li>
             </menu>
           </section>
         </section>
       </div>
       <section class="infothree">
-        <li><a href=""> Terms of use</a></li>
-        <li><a href=""> Privacy Notice</a></li>
-        <li><a href=""> Cookie Policy</a></li>
-        <li><a href=""> FAQ</a></li>
+        <li><a> Terms of use</a></li>
+        <li><a> Privacy Notice</a></li>
+        <li><a> Cookie Policy</a></li>
+        <li><a> FAQ</a></li>
       </section>
       <section class="footer-botom">
         Copyright &copy; 2024 - All Rights Reserved - TECH Sphere
@@ -521,7 +521,7 @@ export let aboutUsPageHTML = `
 <header class="header">
       <nav class="navbar">
         <!-- Logo -->
-        <a href="/" class="nav-logo"
+        <a class="nav-logo"
           ><img class="nav-logo" src="/assets/logos/logo.png" alt="Logo "
         /></a>
 
@@ -672,20 +672,20 @@ export let aboutUsPageHTML = `
 
             <span class="social-links">
               <h2>Follow Us</h2>
-              <a href="#"
+              <a
                 ><img
                   class="facebook"
                   src="../assets/image for social media/facebook_145802.png"
                   alt="Facebook"
               /></a>
-              <a href="#"
+              <a
                 ><img
                   class="instagram"
                   src="../assets/image for social media/instagram_2111463.png"
                   alt="Instagram"
                 />
               </a>
-              <a href="#"
+              <a
                 ><img
                   class="linkedin"
                   src="../assets/image for social media/linkedin_145807.png"
@@ -698,27 +698,27 @@ export let aboutUsPageHTML = `
             <menu>
               <h2>Support</h2>
               <li><a class="footer-contact-link">Contact</a></li>
-              <li><a href=""> Help Center</a></li>
-              <li><a href=""> Site Map</a></li>
-              <li><a href=""> Professional Services</a></li>
+              <li><a> Help Center</a></li>
+              <li><a> Site Map</a></li>
+              <li><a> Professional Services</a></li>
             </menu>
           </section>
           <section class="infotwoo">
             <menu>
               <h2>Company</h2>
               <li><a class="footer-about-link"> About Us</a></li>
-              <li><a href=""> Careers</a></li>
-              <li><a href=""> Newsroom</a></li>
-              <li><a href=""> Resources</a></li>
+              <li><a> Careers</a></li>
+              <li><a> Newsroom</a></li>
+              <li><a> Resources</a></li>
             </menu>
           </section>
         </section>
       </div>
       <section class="infothree">
-        <li><a href=""> Terms of use</a></li>
-        <li><a href=""> Privacy Notice</a></li>
-        <li><a href=""> Cookie Policy</a></li>
-        <li><a href=""> FAQ</a></li>
+        <li><a> Terms of use</a></li>
+        <li><a> Privacy Notice</a></li>
+        <li><a> Cookie Policy</a></li>
+        <li><a> FAQ</a></li>
       </section>
       <section class="footer-botom">
         Copyright &copy; 2024 - All Rights Reserved - TECH Sphere

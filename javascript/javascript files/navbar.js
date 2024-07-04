@@ -117,6 +117,13 @@ export const navbarFunction = () => {
       homePageGlobalFunction();
     };
 
+    document.querySelector(".nav-logo").onclick = (_event) => {
+      history.pushState({}, "", "/");
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = homePageHTML;
+      homePageGlobalFunction();
+    };
+
     document.querySelector(".footer-contact-link").onclick = (_event) => {
       history.pushState({}, "", "/contact");
       bodyHistory.push(document.body.innerHTML);
