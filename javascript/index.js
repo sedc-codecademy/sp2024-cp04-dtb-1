@@ -107,7 +107,7 @@ export const homePageGlobalFunction = () => {
         postsDataCopy.sort((a, b) => new Date(a.date) - new Date(b.date));
       }
     }
-
+    postsContainer.innerHTML = "";
     renderFilteredPosts(postsDataCopy, postsContainer);
   };
 
