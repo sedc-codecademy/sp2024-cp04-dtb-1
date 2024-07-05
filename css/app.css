@@ -1653,6 +1653,8 @@ input::placeholder {
     padding-bottom: 35px;
   }
 
+  /*About us */
+
   .aboutUs-container {
     display: flex;
     flex-direction: column;
@@ -1716,6 +1718,34 @@ input::placeholder {
   .img-about2 {
     width: 380px;
     margin-left: 70px;
+  }
+
+  /*Contact us */
+
+  .form {
+    width: 350px;
+    height: 660px;
+  }
+  .inputBox input {
+    width: 300px;
+    height: 35px;
+  }
+  .row50 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 300px;
+  }
+  .inputBox {
+    width: 300px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .info-map-flexbox div {
+    width: 350px;
   }
 }
 /*toggle*/
