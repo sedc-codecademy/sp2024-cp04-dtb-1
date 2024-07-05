@@ -1653,8 +1653,6 @@ input::placeholder {
     padding-bottom: 35px;
   }
 
-  /*About us */
-
   .aboutUs-container {
     display: flex;
     flex-direction: column;
@@ -1719,7 +1717,6 @@ input::placeholder {
     width: 380px;
     margin-left: 70px;
   }
-
   /*Contact us */
 
   .form {
