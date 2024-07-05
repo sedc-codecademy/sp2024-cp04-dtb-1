@@ -63,7 +63,7 @@ export const renderPostInPostPage = (post) => {
            name="psw"
            required
          />
-         <button type="submit" class="login-form-button">Login</button>
+         <button class="login-form-button">Login</button>
          <p class="new-reader">
            New reader?
            <a href="#" class="create-account-link">Create an account.</a>

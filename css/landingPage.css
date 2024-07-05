@@ -113,3 +113,42 @@ p {
     height: 40px;
   }
 }
+
+@media screen and (max-width: 440px) {
+  .landingMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 0;
+  }
+
+  .landingTextDiv {
+    height: 100px;
+  }
+
+  .landingTechDiv img {
+    width: 200px;
+    padding-bottom: 100px;
+    padding-left: 45px;
+  }
+
+  .landingTechDiv {
+    width: 200px;
+  }
+
+  div .first {
+    display: none;
+  }
+
+  .output {
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 42px;
+  }
+
+  .landing-page-button {
+    display: flex;
+    justify-content: center;
+  }
+}

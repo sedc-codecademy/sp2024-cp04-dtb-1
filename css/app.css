@@ -378,7 +378,7 @@ a {
 
 main {
   background-color: var(--bg-color);
-  padding: 20px;
+  padding: 20px 5px 20px 20px;
 }
 
 .main-container {
@@ -400,7 +400,17 @@ main {
   position: sticky;
   z-index: 22;
   right: 0%;
-  padding: 0px 10px;
+  padding: 5px 10px;
+}
+
+.ad-container-one {
+  display: flex;
+  justify-content: end;
+}
+
+.ad-container-two {
+  display: flex;
+  justify-content: end;
 }
 
 /* Trending posts container css */
@@ -459,11 +469,11 @@ main {
 .posts-filter-button {
   height: 25px;
   width: 55px;
-  border: 2px solid var(--font-color);
+  border: 1px solid var(--font-color);
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .posts-filter-button:hover {
@@ -643,6 +653,10 @@ main {
   font-size: 16px;
 }
 
+.back-to-top-button:hover {
+  background-color: #3a476a;
+}
+
 /* Show more func */
 
 .main-posts-container div:nth-child(5) ~ div {
@@ -728,6 +742,7 @@ li {
 a {
   color: var(--font-color);
   text-decoration: none;
+  cursor: pointer;
 }
 a:hover {
   color: var(--border-hover-color);
@@ -816,6 +831,10 @@ a:hover {
   margin: 30px 0;
   width: 310px;
   border-bottom: 2px solid var(--font-color);
+}
+
+.inputBox span {
+  color: var(--font-color);
 }
 
 .form-box .input-box input {
@@ -1050,10 +1069,11 @@ input::placeholder {
 }
 
 .inputBox span {
-  color: var(--bg-light);
+  color: var(--font-color);
   margin-top: 10px;
   margin-bottom: 5px;
   font-weight: 400;
+  font-size: 12px;
 }
 
 .inputBox input {
@@ -1080,13 +1100,13 @@ input::placeholder {
   background-color: var(--bg-grey);
 }
 .send-button button:hover {
-  background-color: #2d6a4f;
+  background-color: var(--border-hover-color);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   transform: translateX(2px);
 }
 .send-button button:active {
-  background-color: var(--border-hover-color);
+  background-color: #2d6a4f;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -1260,6 +1280,10 @@ input::placeholder {
   font-family: sans-serif;
 }
 
+.text p {
+  font-size: 14px;
+}
+
 .commentbox {
   display: flex;
   justify-content: space-around;
@@ -1283,7 +1307,12 @@ input::placeholder {
   margin: 5px 0;
   background: var(--bg-color);
   padding: 10px;
+  color: var(--font-color);
   border-radius: 5px;
+}
+
+.usercomment {
+  color: var(--font-color);
 }
 
 .commentinput input {
@@ -1317,7 +1346,8 @@ input::placeholder {
 }
 
 .policy {
-  margin: 20px 0;
+  margin: 50px 30px 20px 0;
+  padding-right: 50px;
   font-size: 1.3em;
   font-family: Arial, sans-serif;
   color: var(--font-color);
@@ -1455,7 +1485,8 @@ input::placeholder {
   }
 
   .navbar {
-    width: 450px;
+    width: 435px;
+    padding-left: 20px;
   }
 
   .search-form {
@@ -1488,12 +1519,12 @@ input::placeholder {
   }
 
   .post-container {
-    height: 530px;
+    height: 560px;
   }
 
   .blog-post {
-    width: 415px;
-    height: 530px;
+    width: 400px;
+    height: 560px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -1539,6 +1570,10 @@ input::placeholder {
     flex-direction: column;
     align-items: start;
     gap: 10px;
+  }
+
+  .main-posts-container {
+    gap: 50px;
   }
 
   .main-posts-filters {
@@ -1616,6 +1651,71 @@ input::placeholder {
 
   .infotwoo h2 {
     padding-bottom: 35px;
+  }
+
+  .aboutUs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .aboutUs-container-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+    width: 300px;
+  }
+  .aboutUs-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    gap: 50px;
+  }
+
+  .about-image-container-one {
+    width: 350px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-about {
+    width: 340px;
+    margin-right: 150px;
+  }
+
+  .aboutUs-container-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: reverse;
+    gap: 50px;
+    padding: 10px;
+    width: 300px;
+    padding-right: 30px;
+  }
+
+  .text-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    width: 400px;
+  }
+  .text-two p {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding-left: 50px;
+  }
+
+  .img-about2 {
+    width: 380px;
+    margin-left: 70px;
   }
 }
 /*toggle*/

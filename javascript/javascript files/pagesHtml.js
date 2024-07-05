@@ -59,7 +59,7 @@ export let homePageHTML = `
             name="psw"
             required
           />
-          <button type="submit" class="login-form-button">Login</button>
+          <button class="login-form-button">Login</button>
           <p class="new-reader">
             New reader?
             <a class="create-account-link">Create an account.</a>
@@ -352,7 +352,7 @@ export let contactPageHTML = `<header class="header">
             name="psw"
             required
           />
-          <button type="submit" class="login-form-button">Login</button>
+          <button class="login-form-button">Login</button>
           <p class="new-reader">
             New reader?
             <a class="create-account-link">Create an account.</a>
@@ -412,7 +412,7 @@ export let contactPageHTML = `<header class="header">
 
                 <div class="send-button">
                     <div class="inputBox">
-                        <button type="submit">Send</button>
+                        <button type="button">Send</button>
                     </div>
                 </div>
                 </div>
@@ -575,7 +575,7 @@ export let aboutUsPageHTML = `
             name="psw"
             required
           />
-          <button type="submit" class="login-form-button">Login</button>
+          <button class="login-form-button">Login</button>
           <p class="new-reader">
             New reader?
             <a class="create-account-link">Create an account.</a>
@@ -630,13 +630,6 @@ export let aboutUsPageHTML = `
         </div>
       </div>
       <div class="aboutUs-container-two">
-        <div>
-          <img
-            class="img-about2"
-            src="./assets/img for about us/wp2848527.webp"
-            width="560"
-          />
-        </div>
         <div class="text-two">
           <h3 class="aboutUs-subheader">What We Cover</h3>
           <p>
@@ -650,6 +643,13 @@ export let aboutUsPageHTML = `
             trends. Industry Analysis: Comprehensive analysis of market trends,
             product launches, and industry movements.
           </p>
+        </div>
+        <div>
+          <img
+            class="img-about2"
+            src="./assets/img for about us/wp2848527.webp"
+            width="560"
+          />
         </div>
       </div>
     </main>
