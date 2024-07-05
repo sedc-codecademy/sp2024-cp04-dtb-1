@@ -115,12 +115,21 @@ export let homePageHTML = `
                   <option value="rating">Rating</option>
                   <option value="month">Month</option>
                   <option value="date">Date</option>
+                  <option value="tag">Tag</option>
                 </select>
                 <select class="select-filters-two">
                   <option value="none" selected disabled>Order by:</option>
-                  <option value="asc">ASC</option>
-                  <option value="desc">DESC</option>
+                  <option value="asc">Newest</option>
+                  <option value="desc">Oldest</option>
                 </select>
+                <select class="select-filters-three">
+                <option value="none" selected disabled>Select tag:</option>
+                  <option value="ai">Ai</option>
+                  <option value="xbox">Xbox</option>
+                  <option value="hackers">Hackers</option>
+                  <option value="apple">Apple</option>
+                  <option value="gaming">Gaming</option>
+                </select>                
               </div>
               <div class="main-button-filters-div">
                 <button class="posts-filter-button">Filter</button>

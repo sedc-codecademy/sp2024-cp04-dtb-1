@@ -8,7 +8,7 @@
     "description": "Apple is partnering with OpenAI to put ChatGPT into Siri, the company announced at its WWDC 2024 keynote on Monday. ChatGPT will be available for free in iOS 18 and macOS Sequoia later this year without an account, and Apple says that user queries won't be logged. The popular chatbot will also be integrated into Apple systemwide writing tools.",
     "text": "Apple is partnering with OpenAI to put ChatGPT into Siri, the company announced at its WWDC 2024 keynote on Monday. ChatGPT will be available for free in iOS 18 and macOS Sequoia later this year without an account, and Apple says that user queries wont be logged. The popular chatbot will also be integrated into Apple systemwide writing tools. In addition, paid ChatGPT subscribers will be able to link their accounts to access premium features from OpenAI within Apple operating systems. As OpenAI and Apple explain, “Apple users are asked before any questions are sent to ChatGPT, along with any documents or photos, and Siri then presents the answer directly. The long-awaited partnership emerges as Apple strives to integrate AI features that rival those of other big tech companies. Apple had been in discussions with both Google and OpenAI to incorporate their AI technology into its operating systems. Ultimately, it was OpenAI that secured the deal.",
     "rating": 4,
-    "tag": "chatgpt"
+    "tag": "ai"
   },
   {
     "id": 2,
@@ -85,7 +85,7 @@
     "description": "To be successful, smart kitchen innovations need to address real problems in the kitchen, not just jump on the bandwagon of whatever is the sizzling hot thing in tech.",
     "text": "To be successful, smart kitchen innovations need to address real problems in the kitchen, not just jump on the bandwagon of whatever is the sizzling hot thing in tech. For example, take the Joule sous vide. One of the earliest smart kitchen gadgets, this beautiful piece of tech was almost impossible to use because it relied entirely on an app and Wi-Fi connectivity. Two things still largely alien to the kitchen of 2015. Chris Young, former CEO of ChefSteps which developed Joule, told the SKS audience how the decision to not put a screen on the device lost them half their potential customer base. (Joule was rescued by Breville in 2019, which still hasn't put a screen on it.) Young's latest gadget is the Combustion Predictive Thermometer Plus Display, an incredibly smart meat thermometer that not only has the option of a very big screen but doesn't need Wi-Fi at all. This type of pivot is emblematic of what I saw throughout the conference this week: a refocusing by the entrepreneurs and companies in the smart kitchen away from sleek, showy gadgets toward developing products built on an understanding of how people actually cook. Many of the solutions I saw and heard about seem designed to make cooking easier, healthier, and more personalized — the latter being something generative AI will clearly play a big role in. Of course, there's still plenty of gadgets — from robot chefs to wirelessly-powered appliances. But there's also a shift toward improving the software that powers the smart kitchen. Rather than rely on individual apps built by appliance manufacturers, platforms like Fresco are working toward a universal kitchen OS — a cross-kitchen experience that can connect our appliances with each other and with the recipes we want to cook. My ideal smart kitchen is one that knows what I have in my pantry and fridge, can develop me a meal plan based on those ingredients, shop for whatever extra items I need, then have my appliances prepped and ready to go when I start cooking. While that dream is still a ways off, from what I saw this week, the future of the smart kitchen is coming into focus. I'll be sharing snippets and stories around the things that caught my attention at the Smart Kitchen Summit over the next few days, so check back often.",
     "rating": 3,
-    "tag": "smartkitchen"
+    "tag": "ai"
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "description": "As it has done in years past, Apple outlined upcoming new software features coming to the company's current lineup of AirPods earbuds and headphones today.",
     "text": "As it has done in years past, Apple outlined upcoming new software features coming to the company's current lineup of AirPods earbuds and headphones today. Apple is introducing Siri Interactions, which includes new gesture controls for AirPods to control Siri in new ways. You can shake your head yes or no to respond without needing to use your voice, which is particularly useful in loud environments. AirPods Pro are getting new Voice Isolation technology that utilizes the H2 chip and machine learning to isolate and enhance voice quality while removing background noise like wind so the listener can hear you clearly.",
     "rating": 4,
-    "tag": "apple-airpods"
+    "tag": "apple"
   },
   {
     "id": 10,

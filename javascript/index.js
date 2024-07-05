@@ -39,6 +39,7 @@ export const homePageGlobalFunction = () => {
   const searchInput = document.querySelector(".search-input");
   const selectOneFilter = document.querySelector(".select-filters-one");
   const selectTwoFilter = document.querySelector(".select-filters-two");
+  const selectThreeFilter = document.querySelector(".select-filters-three");
   const filterButton = document.querySelector(".posts-filter-button");
   const postsContainer = document.querySelector(".main-posts-container");
   const trendingPostsContainer = document.querySelector(
@@ -77,7 +78,12 @@ export const homePageGlobalFunction = () => {
       });
 
       filterButton.addEventListener("click", () => {
-        filterPosts(selectOneFilter.value, selectTwoFilter.value, data);
+        filterPosts(
+          selectOneFilter.value,
+          selectTwoFilter.value,
+          selectThreeFilter.value,
+          data
+        );
       });
 
       return data;
@@ -86,8 +92,13 @@ export const homePageGlobalFunction = () => {
     }
   };
 
-  const filterPosts = (selectOneValue, selectTwoValue, postsData) => {
-    const postsDataCopy = [...postsData];
+  const filterPosts = (
+    selectOneValue,
+    selectTwoValue,
+    selectThreeValue,
+    postsData
+  ) => {
+    let postsDataCopy = [...postsData];
 
     if (selectOneValue === "rating") {
       if (selectTwoValue === "asc") {
@@ -107,6 +118,11 @@ export const homePageGlobalFunction = () => {
         postsDataCopy.sort((a, b) => new Date(a.date) - new Date(b.date));
       }
     }
+
+    if (selectOneValue === "tag") {
+      postsDataCopy = postsData.filter((post) => post.tag === selectThreeValue);
+    }
+
     postsContainer.innerHTML = "";
     renderFilteredPosts(postsDataCopy, postsContainer);
   };
