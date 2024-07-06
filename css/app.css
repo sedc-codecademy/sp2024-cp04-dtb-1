@@ -454,7 +454,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
   background-color: var(--bg-grey);
   width: 360px;
   border-radius: 10px;
@@ -496,9 +496,18 @@ main {
 }
 
 .select-filters-three {
+  display: none;
   width: 90px;
   height: 25px;
   border-radius: 5px;
+  border: 1px solid var(--font-color);
+}
+
+.select-filters-four {
+  display: none;
+  width: 110px;
+  border-radius: 5px;
+  height: 25px;
   border: 1px solid var(--font-color);
 }
 
@@ -1696,8 +1705,7 @@ input::placeholder {
 
   .aboutUs-container-two {
     display: flex;
-    flex-direction: column;
-    justify-content: reverse;
+    flex-direction: column-reverse;
     gap: 50px;
     padding: 10px;
     width: 300px;

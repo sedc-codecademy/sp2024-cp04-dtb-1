@@ -129,6 +129,21 @@ export let homePageHTML = `
                   <option value="hackers">Hackers</option>
                   <option value="apple">Apple</option>
                   <option value="gaming">Gaming</option>
+                </select>
+                <select class="select-filters-four">
+                <option value="none" selected disabled>Select month:</option>
+                  <option value="0">01</option>
+                  <option value="1">02</option>
+                  <option value="2">03</option>
+                  <option value="3">04</option>
+                  <option value="4">05</option>
+                  <option value="5">06</option>
+                  <option value="6">07</option>
+                  <option value="7">08</option>
+                  <option value="8">09</option>
+                  <option value="9">10</option>
+                  <option value="10">11</option>
+                  <option value="11">12</option>
                 </select>                
               </div>
               <div class="main-button-filters-div">
@@ -639,6 +654,13 @@ export let aboutUsPageHTML = `
         </div>
       </div>
       <div class="aboutUs-container-two">
+      <div>
+          <img
+            class="img-about2"
+            src="./assets/img for about us/wp2848527.webp"
+            width="560"
+          />
+        </div>
         <div class="text-two">
           <h3 class="aboutUs-subheader">What We Cover</h3>
           <p>
@@ -653,13 +675,7 @@ export let aboutUsPageHTML = `
             product launches, and industry movements.
           </p>
         </div>
-        <div>
-          <img
-            class="img-about2"
-            src="./assets/img for about us/wp2848527.webp"
-            width="560"
-          />
-        </div>
+        
       </div>
     </main>
     <footer id="footer">

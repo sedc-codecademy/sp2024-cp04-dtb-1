@@ -40,6 +40,7 @@ export const homePageGlobalFunction = () => {
   const selectOneFilter = document.querySelector(".select-filters-one");
   const selectTwoFilter = document.querySelector(".select-filters-two");
   const selectThreeFilter = document.querySelector(".select-filters-three");
+  const selectFourFilter = document.querySelector(".select-filters-four");
   const filterButton = document.querySelector(".posts-filter-button");
   const postsContainer = document.querySelector(".main-posts-container");
   const trendingPostsContainer = document.querySelector(
@@ -82,6 +83,7 @@ export const homePageGlobalFunction = () => {
           selectOneFilter.value,
           selectTwoFilter.value,
           selectThreeFilter.value,
+          selectFourFilter.value,
           data
         );
       });
@@ -96,6 +98,7 @@ export const homePageGlobalFunction = () => {
     selectOneValue,
     selectTwoValue,
     selectThreeValue,
+    selectFourValue,
     postsData
   ) => {
     let postsDataCopy = [...postsData];
@@ -121,6 +124,12 @@ export const homePageGlobalFunction = () => {
 
     if (selectOneValue === "tag") {
       postsDataCopy = postsData.filter((post) => post.tag === selectThreeValue);
+    }
+
+    if (selectOneValue === "month") {
+      postsDataCopy = postsData.filter(
+        (post) => new Date(post.date).getMonth() === Number(selectFourValue)
+      );
     }
 
     postsContainer.innerHTML = "";
@@ -166,6 +175,42 @@ export const homePageGlobalFunction = () => {
 
   backToTopBtn.addEventListener("click", () => {
     topFunction();
+  });
+
+  // Filters event
+
+  selectOneFilter.addEventListener("change", (event) => {
+    if (event.target.value === "tag") {
+      selectThreeFilter.style.display = "block";
+      selectTwoFilter.style.display = "none";
+      selectFourFilter.style.display = "none";
+    }
+    if (event.target.value === "rating") {
+      selectThreeFilter.style.display = "none";
+      selectFourFilter.style.display = "none";
+      selectTwoFilter.style.display = "block";
+      selectTwoFilter.innerHTML = `
+      <option value="none" selected disabled>Order by:</option>
+      <option value="asc">Worst</option>
+      <option value="desc">Best</option>
+      `;
+    }
+    if (event.target.value === "date") {
+      selectThreeFilter.style.display = "none";
+      selectTwoFilter.style.display = "block";
+
+      selectFourFilter.style.display = "none";
+      selectTwoFilter.innerHTML = `
+      <option value="none" selected disabled>Order by:</option>
+                  <option value="asc">Newest</option>
+                  <option value="desc">Oldest</option>
+      `;
+    }
+    if (event.target.value === "month") {
+      selectFourFilter.style.display = "block";
+      selectThreeFilter.style.display = "none";
+      selectTwoFilter.style.display = "none";
+    }
   });
 
   // Calling fetch data on every homepage open or refresh
