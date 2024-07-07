@@ -11,8 +11,7 @@ export const renderPostList = (posts, container) => {
                 <div class="blog-post_img">
                   <img
                     src=${post.image}
-                    alt=""
-                    height="45px"
+                    alt="Post image"                    
                   />
                 </div>
                 <div class="blog-post_info">

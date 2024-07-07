@@ -223,6 +223,10 @@ export const renderPostInPostPage = (post) => {
 
   history.pushState({}, "", "/post");
 
+  // let ChangeIcon = function (icon) {
+  //   icon.classList.toggle("fa-star-half-stroke");
+  // };
+
   const USERID = {
     name: null,
     identity: null,

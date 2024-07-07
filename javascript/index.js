@@ -198,7 +198,6 @@ export const homePageGlobalFunction = () => {
     if (event.target.value === "date") {
       selectThreeFilter.style.display = "none";
       selectTwoFilter.style.display = "block";
-
       selectFourFilter.style.display = "none";
       selectTwoFilter.innerHTML = `
       <option value="none" selected disabled>Order by:</option>
