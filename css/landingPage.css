@@ -116,11 +116,12 @@ p {
 
 @media screen and (max-width: 440px) {
   .landingMain {
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
-    padding: 0;
+    gap: 10px;
   }
 
   .landingTextDiv {
@@ -128,9 +129,8 @@ p {
   }
 
   .landingTechDiv img {
-    width: 200px;
-    padding-bottom: 100px;
-    padding-left: 45px;
+    width: 250px;
+    padding-bottom: 40px;
   }
 
   .landingTechDiv {
@@ -143,11 +143,12 @@ p {
 
   .output {
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     font-size: 42px;
   }
 
   .landing-page-button {
+    width: 250px;
     display: flex;
     justify-content: center;
   }
