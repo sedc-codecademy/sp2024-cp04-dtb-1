@@ -145,6 +145,7 @@ a {
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 9999999;
   }
 
   .nav-menu.active {
@@ -1795,6 +1796,28 @@ input::placeholder {
   .comment-post-page-div-container {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    right: 395px;
+    top: 95px;
+    z-index: 9999999;
+  }
+  .newsletterPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    padding-right: 390px;
+    padding-top: 350px;
+    align-items: start;
+    z-index: 99999999;
   }
 }
 /*toggle*/
